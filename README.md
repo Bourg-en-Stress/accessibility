@@ -33,7 +33,7 @@ Source : [L'article Wikipédia « Accessibilité numérique »](https://fr.wikip
 
 ### Livrables
 - 18/02/2021, 16h : Un dossier de conception ;
-- 25/02/2020, 12h : Un repository Github avec :
+- 25/02/2021, 12h : Un repository Github avec :
     -  une branche par page ;
     - une branche *main* fusionnant le travail réalisé sur chaque branche ;
     - une *board* de gestion et de suivi de projet de type *kanban*, contenant des *cards* spécifiant :
@@ -84,11 +84,11 @@ Source : [L'article Wikipédia « Accessibilité numérique »](https://fr.wikip
     - lancement de la phase de développement ;
     - attribution des tâches ;
 
-- 23/02/2020, 10h00 : 
+- 23/02/2021, 10h00 : 
     - réunion de cadrage, présentation par chaque collaborateur des avancées sur son travail de développement ;
     - point sur l'utilisation des branches et des fusions :
 
-- 25/02/2020, 10h30 : 
+- 25/02/2021, 10h30 : 
     - Finalisation de la phase de développement et validation du travail réalisé ;
 
 #### Phase d'exploitation
@@ -96,7 +96,7 @@ Source : [L'article Wikipédia « Accessibilité numérique »](https://fr.wikip
 - 25/02/2021, 13h30 : 
     - Réunion de préparation du passage en production du produit fini ;
 
-- 01/03/2020, 10h30 :
+- 01/03/2021, 10h30 :
     - Livraison du produit fini.
 
 ### Ressources humaines
