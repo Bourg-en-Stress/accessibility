@@ -33,7 +33,7 @@ Source : [L'article Wikipédia « Accessibilité numérique »](https://fr.wikip
 
 ### Livrables
 - 18/02/2021, 16h : Un dossier de conception ;
-- 25/02/2021, 12h : Un repository Github avec :
+- 25/02/2020, 12h : Un repository Github avec :
     -  une branche par page ;
     - une branche *main* fusionnant le travail réalisé sur chaque branche ;
     - une *board* de gestion et de suivi de projet de type *kanban*, contenant des *cards* spécifiant :
@@ -84,11 +84,11 @@ Source : [L'article Wikipédia « Accessibilité numérique »](https://fr.wikip
     - lancement de la phase de développement ;
     - attribution des tâches ;
 
-- 23/02/2021, 10h00 : 
+- 23/02/2020, 10h00 : 
     - réunion de cadrage, présentation par chaque collaborateur des avancées sur son travail de développement ;
     - point sur l'utilisation des branches et des fusions :
 
-- 25/02/2021, 10h30 : 
+- 25/02/2020, 10h30 : 
     - Finalisation de la phase de développement et validation du travail réalisé ;
 
 #### Phase d'exploitation
@@ -96,7 +96,7 @@ Source : [L'article Wikipédia « Accessibilité numérique »](https://fr.wikip
 - 25/02/2021, 13h30 : 
     - Réunion de préparation du passage en production du produit fini ;
 
-- 01/03/2021, 10h30 :
+- 01/03/2020, 10h30 :
     - Livraison du produit fini.
 
 ### Ressources humaines
@@ -108,7 +108,7 @@ Source : [L'article Wikipédia « Accessibilité numérique »](https://fr.wikip
 ## Description des phases de réalisation du projet 
 
 
-### Phase d’initialisation et de lancement
+### Phase d’initialisation
 
 #### Préparation de l'environnement de travail collaboratif
 - Procédez à l'élection d'un « Chef de projet » qui sera en charge de la coordination des différents acteurs sur le projet ; 
@@ -120,22 +120,17 @@ Source : [L'article Wikipédia « Accessibilité numérique »](https://fr.wikip
 > - [Cadrez le projet avec votre équipe](https://openclassrooms.com/fr/courses/4296701-gerez-un-projet-digital-avec-une-methodologie-en-cascade/4303766-cadrez-le-projet-avec-votre-equipe)
 > - [Utilisez Git et GitHub pour vos projets de développement](https://openclassrooms.com/fr/courses/5641721-utilisez-git-et-github-pour-vos-projets-de-developpement)
 
-#### Recherche informationnelle et analyse
-- Trouvez des informations sur le thème choisi :
-    - informations textuelles ;
-    - informations chiffrées ;
-- Identifiez des acteurs communiquant sur le sujet ;
-- Si possible, réalisez un *benchmark* de site de sensibilisation et de prescription sur ce sujet ou sur d'autres sujets ; 
-- En vous appuyant sur les résultats de vos recherches, dégagez des axes de problématisation et définissez un périmètre bien défini, qui n'a pas forcément besoin d'être très ambitieux (un sujet restreint mais traité de façon exhaustive vaut mieux qu'un sujet large qu'on se contente de survoler)
-- Parmi les résultats de vos recherches, sélectionnez des informations pertinentes sur lesquelles vous souhaitez communiquer, organisez-les et hiérarchisez-les sur un support de présentation ;
-- Recherchez sur le web des illustrations, des graphismes et des visuels libres de droit que vous pourrez exploiter dans la phase de conception graphique (ex. : photos, dessins, icônes)
-- Soumettez le résultat de ce travail au commanditaire pour validation ;
-- Définissez l'arborescence de votre site web (déterminez le nombre de pages, structurez et hiérarchisez les informations dans vos pages Web).
 
-> Se former : [Réalisez un benchmark digital](https://openclassrooms.com/fr/courses/5774771-realisez-un-benchmark-digital)
+### Phase de production : Conception, 1ère itération
 
+#### Conception de l'interface du site 1ère itération
 
-### Phase de production : Conception
+#### Wireframe
+- Utilisez un logiciel de PAO/DAO (par exemple Adobe Illustrator, Pencil Project ou simplement PowerPoint) pour réaliser des schémas (*zoning*, *wireframe*) de l'interface, illustrant la position et le contenu des différents éléments (navigation, entête, contenu, pied de page)
+- Déclinez vos schémas pour différents types de périphériques (*desktop* & *mobile*)
+- Anticipez l'interactivité de vos pages Web (tracez des liens entre les éléments de vos schémas : tel bouton conduit à telle page, etc.)
+
+> Se former :  [Réalisez le zoning et le wireframe d'un site web](https://openclassrooms.com/fr/courses/4296701-gerez-un-projet-digital-avec-une-methodologie-en-cascade/4308346-realisez-le-zoning-et-le-wireframe-dun-site-web)
 
 #### Définition de l'identité visuelle
 
@@ -144,13 +139,13 @@ Source : [L'article Wikipédia « Accessibilité numérique »](https://fr.wikip
     - son logotype (créé à partir d'une image au format vectoriel par exemple récupéré sur le web et personnalisé en  utilisant le logiciel professionnel de traitement d'images Adobe Illustrator)
     - son thème, sous forme d'un petit paragraphe de présentation (vous l'intégrerez par la suite dans la )
 
-##### Charte graphique
+###### Charte graphique
 - Définissez votre palette chromatique
 - Choisissez vos typographies (en prenant en compte la problématique de l'optimisation pour la lecture sur écran)
 
 > Se former : [Créez et appliquez une charte graphique](https://openclassrooms.com/fr/courses/5454886-creez-et-appliquez-une-charte-graphique)
 
-##### Production de contenu : réalisation d'illustrations, de graphismes et de visuels
+###### Production de contenu : réalisation d'illustrations, de graphismes et de visuels
 - À partir de différentes sources de données *big datas*, créez des infographies statiques de Data Visualisation ;
 - Élaborer une animation destinée à des sites web *desktop* et *mobile* à l'aide d'une application d'animation de type Adobe Spark (ou Crello) ;
 - En utilisant le logiciel professionnel de traitement d'images Adobe Illustrator, réalisez des illustrations vectorielles (éléments d'interface, pictogrammes) ;
@@ -161,7 +156,7 @@ Source : [L'article Wikipédia « Accessibilité numérique »](https://fr.wikip
 
 > Se former : [Maîtrisez les risques juridiques liés au numérique](https://openclassrooms.com/fr/courses/5162341-maitrisez-les-risques-juridiques-lies-au-numerique)
 
-##### Conception d'un UI KIT
+###### Conception d'un UI KIT
 - Concevez un UI KIT, ou identifiez un UI KIT libre de droit réalisé par un graphiste et adaptez-le selon votre charte graphique. Il peut contenir :
     - des éléments de navigation ;
     - des boutons ou des *Call To Action* ;
@@ -176,20 +171,29 @@ Source : [L'article Wikipédia « Accessibilité numérique »](https://fr.wikip
 > Exemples d'UI kits : [blogduwebdesign.com](https://www.blogduwebdesign.com/20-packs-ui-kits-gratuits-creations-web/) 
 
 
-### Conception de l'interface du site
+### Phase de recherche informationnelle et analyse
 
-### Spécifications fonctionnelles
+- Trouvez des informations sur le thème choisi :
+    - informations textuelles ;
+    - informations chiffrées ;
+- Identifiez des acteurs communiquant sur le sujet ;
+- Si possible, réalisez un *benchmark* de site de sensibilisation et de prescription sur ce sujet ou sur d'autres sujets ; 
+- En vous appuyant sur les résultats de vos recherches, dégagez des axes de problématisation et définissez un périmètre bien défini, qui n'a pas forcément besoin d'être très ambitieux (un sujet restreint mais traité de façon exhaustive vaut mieux qu'un sujet large qu'on se contente de survoler)
+- Parmi les résultats de vos recherches, sélectionnez des informations pertinentes sur lesquelles vous souhaitez communiquer, organisez-les et hiérarchisez-les sur un support de présentation ;
+- Recherchez sur le web des illustrations, des graphismes et des visuels libres de droit que vous pourrez exploiter dans la phase de conception graphique (ex. : photos, dessins, icônes)
+- Soumettez le résultat de ce travail au commanditaire pour validation ;
+- Définissez l'arborescence de votre site web (déterminez le nombre de pages, structurez et hiérarchisez les informations dans vos pages Web).
+
+> Se former : [Réalisez un benchmark digital](https://openclassrooms.com/fr/courses/5774771-realisez-un-benchmark-digital)
+
+
+### Phase de production : Conception, 2nd itération
+
+#### Spécifications fonctionnelles
 
 - La rédaction des spécifications fonctionnelles de votre site web dépend de votre travail antérieur : pages, hiérarchisation des pages, navigation, etc. :  vous devez donc contribuez à l'élaboration du cahier des charges en rédigeant et complétant vous-même la partie « Spécifications fonctionnelles ». Bon courage ! 😏 
 
 > Se former : [Rédigez les spécifications fonctionnelles de votre projet](https://openclassrooms.com/fr/courses/4296701-gerez-un-projet-digital-avec-une-methodologie-en-cascade/4303806-redigez-les-specifications-fonctionnelles-de-votre-projet)
-
-#### Wireframe
-- Utilisez un logiciel de PAO/DAO (par exemple Adobe Illustrator, Pencil Project ou simplement PowerPoint) pour réaliser des schémas (*zoning*, *wireframe*) de l'interface, illustrant la position et le contenu des différents éléments (navigation, entête, contenu, pied de page)
-- Déclinez vos schémas pour différents types de périphériques (*desktop* & *mobile*)
-- Anticipez l'interactivité de vos pages Web (tracez des liens entre les éléments de vos schémas : tel bouton conduit à telle page, etc.)
-
-> Se former :  [Réalisez le zoning et le wireframe d'un site web](https://openclassrooms.com/fr/courses/4296701-gerez-un-projet-digital-avec-une-methodologie-en-cascade/4308346-realisez-le-zoning-et-le-wireframe-dun-site-web)
 
 #### Maquettes
 - Utilisez Adobe Photoshop pour créer les versions des maquettes pour l'affichage *desktop* et *mobile*, sur la base de vos wireframes ;
@@ -228,6 +232,7 @@ Le dossier de conception doit contenir :
 - Spécifications techniques
     - Technologies utilisées pour l'intégration (HTML / CSS / Bootstrap)
     - Référencement naturel : sitemap.xml, robots.txt 
+
 
 ### Phase de production : Développement
 
@@ -294,6 +299,5 @@ Le dossier de conception doit contenir :
 - Soumettez le site réalisé à votre commanditaire :
     - Prenez acte des retours du commanditaire ;
     - Apportez d'éventuelles modifications suite à ces retours.
-
 
 
