@@ -307,5 +307,5 @@ Le dossier de conception doit contenir :
 
 - [Article Wikipédia : Accessibilité du web](https://fr.wikipedia.org/wiki/Accessibilit%C3%A9_du_web)
 
-- [uigoodies.com](https://www.uigoodies.com/?category=Accessibility)
+- [Des outils UI pour l'accessibilité sur uigoodies.com](https://www.uigoodies.com/?category=Accessibility)
 
