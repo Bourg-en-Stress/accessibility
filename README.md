@@ -301,6 +301,11 @@ Le dossier de conception doit contenir :
     - Apportez d'éventuelles modifications suite à ces retours.
 
 ## Ressources identifiées
+
 - [accessiBe : The #1 Automated Web Accessibility Solution for ADA & WCAG Compliance](https://accessibe.com/)
-- [outil pour paramétrer l'accessibilité en fonction du handicap](https://www.webdesignerdepot.com/)
-- [Accessibilité du web](https://fr.wikipedia.org/wiki/Accessibilit%C3%A9_du_web)
+    - [exemple de se site utilisant l'outil précédent pour paramétrer l'accessibilité en fonction du handicap](https://www.webdesignerdepot.com/)
+
+- [Article Wikipédia : Accessibilité du web](https://fr.wikipedia.org/wiki/Accessibilit%C3%A9_du_web)
+
+- [uigoodies.com](https://www.uigoodies.com/?category=Accessibility)
+
