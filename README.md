@@ -300,4 +300,12 @@ Le dossier de conception doit contenir :
     - Prenez acte des retours du commanditaire ;
     - Apportez d'éventuelles modifications suite à ces retours.
 
+## Ressources identifiées
+
+- [accessiBe : The #1 Automated Web Accessibility Solution for ADA & WCAG Compliance](https://accessibe.com/)
+    - [exemple de se site utilisant l'outil précédent pour paramétrer l'accessibilité en fonction du handicap](https://www.webdesignerdepot.com/)
+
+- [Article Wikipédia : Accessibilité du web](https://fr.wikipedia.org/wiki/Accessibilit%C3%A9_du_web)
+
+- [Des outils UI pour l'accessibilité sur uigoodies.com](https://www.uigoodies.com/?category=Accessibility)
 
