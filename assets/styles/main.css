@@ -8,5 +8,93 @@
 
 body
 {
-    font-family: 'OpenDyslexic-Regular';
+    font-family: 'helvetica';
 }
+
+
+
+
+/*Titres couleur */
+
+h1{
+    color: #006a67;
+}
+
+h2{ 
+    color: #034ea2;
+
+}
+
+h3{
+    color: #036ed2;
+}
+
+/*déssoulignement*/
+
+a:link{
+    text-decoration: none;
+    }
+
+    a:hover{
+        color: #141414;
+    }
+
+/*emplacement header*/
+
+.namelogo{
+display: flex;
+justify-content: space-around;
+align-items: center;
+margin-top: 20px;
+margin-bottom: 20px;
+
+}
+
+
+.navbar{
+    justify-content: flex-end;
+}
+
+
+.nav-link  {
+    color: #006a67;
+}
+
+.dropdown-item{
+    color: #006a67;
+}
+
+
+/*liste déroulante*/
+
+.dropdown-menu{
+    border:1px solid #006a67;
+}
+
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #mainIcon {
+    width: 64;
+    position: absolute;
+    left: 50vw;
+    animation-name: animateIconToCenter;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+  }
+
+  @keyframes animateIconToCenter {
+    from {
+      left: 0vw;
+      transform: rotate(0deg) scale(0.2);
+    }
+    to {
+      left: 50vw;
+      transform: rotate(720deg) scale(1);
+    }
+  }
