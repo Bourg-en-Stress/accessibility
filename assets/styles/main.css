@@ -86,15 +86,25 @@ margin-bottom: 20px;
     animation-name: animateIconToCenter;
     animation-duration: 3s;
     animation-timing-function: ease;
-  }
 
-  @keyframes animateIconToCenter {
-    from {
-      left: 0vw;
-      transform: rotate(0deg) scale(0.2);
-    }
-    to {
-      left: 50vw;
-      transform: rotate(720deg) scale(1);
-    }
+
+    /*animations logo*/
+}
+
+@keyframes animateIconToCenter {
+  from {
+    left: 0vw;
+    transform: rotate(0deg) scale(0.2);
   }
+  to {
+    left: 50vw;
+    transform: rotate(720deg) scale(1);
+  }
+}
+
+/*page d'acceuil*/
+
+.avat{
+    width: 100%;
+    height: 100%;
+}
