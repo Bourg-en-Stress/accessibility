@@ -84,7 +84,7 @@ Source : [L'article Wikipédia « Accessibilité numérique »](https://fr.wikip
     - lancement de la phase de développement ;
     - attribution des tâches ;
 
-- 23/02/2021, 10h00 : 
+- 23/02/2021, 10h00(reportée au 24/02/2021) : 
     - réunion de cadrage, présentation par chaque collaborateur des avancées sur son travail de développement ;
     - point sur l'utilisation des branches et des fusions :
 
