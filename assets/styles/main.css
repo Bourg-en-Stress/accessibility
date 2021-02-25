@@ -112,3 +112,16 @@ a:link{
 {
     color: #006a67;
 }
+  @keyframes animateIconToCenter {
+    from {
+      left: 0vw;
+      transform: rotate(0deg) scale(0.2);
+    }
+    to {
+      left: 50vw;
+      transform: rotate(720deg) scale(1);
+    }
+  }
+
+
+ 
