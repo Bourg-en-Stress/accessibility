@@ -13,3 +13,21 @@
 .card-title{
     font-weight: bold;                      
 }
+
+.text-www
+{
+    font-size: 1.6em;
+    text-align: start;
+    margin-top:10%;
+}
+
+h2 a
+{
+    color: #034ea2;
+}
+
+.infog
+{
+    width: 70%;
+    margin:0px;
+}
