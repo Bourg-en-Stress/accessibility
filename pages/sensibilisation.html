@@ -12,77 +12,72 @@
     <title>Hack'cess-sensibilisation</title>
 </head>
 
-<body>
+<body id="arrowtarget">
     <header>
+        <!--Barre de navigation-->
         <div class="col-md-12 col-sm-12 namelogo">
-            <a href="#">
+            <a href="../index.html">
                 <h1>Hack'ccess</h1>
             </a>
 
-            <a href="#" class="header"><img id="mainIcon" class="logo" src="../assets/images/index/Logo.svg" alt="logo accessibilite-numerique"></a>
+            <a class="header" href="../index.html"><img id="mainIcon" src="../assets/images/index/Logo-terre.jpg"
+                    alt="logo accessibilite-numerique"></a>
 
-
-
-            <nav class="navbar navbar-expand-lg  ">
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
 
-                    
-                            <div class="menupointe">
-                                
-                                    <div id="switch1" class="bloc">Sensibilisation</div>
-                                    <div class="pointes"></div>
-                                 <div  id="menu1" class="rouvert">
-                                    <div class="pointes"></div>         
-                                    <div class="bloci"><a href="#cat1">L'Accessibilité</a></div>
-                                    <div class="pointes"></div>
-                                    <div class="pointei"></div>
-                                    <div class="bloci"><a href="#cat2">Les Handicaps</a></div>
-                                    <div class="pointes"></div>
-                                    <div class="pointei"></div>
-                                    <div class="bloci"><a href="#cat3">Les Problématiques</a></div>
-                                    <div class="pointes"></div>
-                                    <div class="pointei"></div>
-                                </div>
-                            </div>
-                            
-                            <div class="menupointe">
-                                
-                                <div id="switch2" class="bloc">Préconisation</div>
-                                <div class="pointes"></div>
-                             <div  id="menu2" class="rouvert">
-                                <div class="pointes"></div>         
-                                <div class="bloci"><a href="#">Rendre accessible</a></div>
-                                <div class="pointes"></div>
-                                <div class="pointei"></div>
-                                <div class="bloci"><a href="#">Normes et pratiques</a></div>
-                                <div class="pointes"></div>
-                                <div class="pointei"></div>
-                                <div class="bloci"><a href="#">Formation</a></div>
-                                <div class="pointes"></div>
-                                <div class="pointei"></div>
-                            </div>
-                        </div>
-                           
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                            </li>
 
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Sensibilisation
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#cat1">L'accessibilité</a></li>
+                                    <li><a class="dropdown-item " href="#cat2">Les handicaps</a></li>
+                                    <li><a class="dropdown-item" href="#cat3">Les problèmatiques</a></li>
+                                </ul>
+
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Préconisations
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="preconisation.html">Rendre accessible</a></li>
+                                    <li><a class="dropdown-item" href="preconisation.html">Normes et bonnes pratiques</a></li>
+                                    <li><a class="dropdown-item" href="preconisation.html">Formation</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </div>
-
     </header>
 
     <main class="container">
         <h2 class="mb-3">Sensibilisation</h2>
-        <nav class="mb-4">
+        <nav class="mb-4 position-sticky">
             <a href="#cat1">Qu’est ce que l’ accessibilité ? </a> |
             <a href="#cat2">Les différentes  formes d'handicaps</a> |
             <a href="#cat3">Les problématiques rencontrées </a>
         </nav>
 
-        <section>
+        <section class="mt-5">
             <h3 id="cat1">Qu’est ce que l’ accessibilité ?</h3>
-            <div class="d-flex">
+            <div class="d-md-flex mt-3">
                 <p class="col-md-6 col-sm-12">L’accessibilité numérique  permet aux personnes en situation de handicap d’accéder aux contenus et
                     services digitaux. Pour ce faire, on applique aux interfaces digitales des normes d’accessibilité
                     émises par le W3C (World Wide Web Consortium) et pensées par des ergonomes pour chaque type de
@@ -99,27 +94,27 @@
             </div>
         </section>
 
-        <section>
-            <h3 id="cat2">Les différentes  formes d'handicaps</h3>
+        <section class="mt-5">
+            <h3 id="cat2" class="text-center">Les différentes  formes d'handicaps</h3>
             <div>
-                <img src="../assets/images/sensibilisation/inofographie-gazette.jpg" alt="">
+                <img class="img-fluid" id="sensinfo" src="../assets/images/sensibilisation/inofographie-gazette.jpg" alt="">
                 <p>Plusieurs handicap peut rendre un site inaccessible :
                 <ul>
-                    <li> - visuelle :
+                    <li class="hlist"> - visuelle : <br>
                         Difficulté de lire les textes , de différencier les couleurs, voir aveuglement totale</li>
-                    <li> - auditif :
+                    <li class="hlist"> - auditif : <br>
                         Impossibilité de lire les contenus audio</li>
-                    <li> -motrices :
+                    <li class="hlist"> -motrices : <br>
                         Incapacité d'utiliser clavier ou souris non adapté, utilisation de commande vocale</li>
-                    <li> -cognitives</li>
+                    <li class="hlist"> -cognitives</li>
                 </ul>
                 </p>
             </div>
         </section>
 
-        <section>
+        <section class="mt-5">
             <h3 id="cat3">Les problématiques rencontrées </h3>
-            <div class="d-flex">
+            <div class="d-md-flex">
                 <p class="col-md-6 col-sm-12">Pour agir contre l’exclusion sociale des personnes en situation de handicap, c’est souvent à
                     l’accessibilité des infrastructures que l’on pense (bâtiments ou transports en commun par exemple).
                     Cependant, l’accessibilité ne s’applique pas uniquement à ces domaines. Elle s’étend aussi à l’usage
@@ -138,13 +133,16 @@
     </main>
 
     <div>
-        <a href="#haut">haut</a>
+        <a href="#arrowtarget"><img class="arrow" src="../assets/images/FlecheHaut.svg" alt=""></a>
     </div>
 
     <footer>
-        <a href="#">mention légale</a>
-    </footer>
-
+        <div class="row">
+          <div class="col-md-12 col-sm-12 mt-5 mentions">
+            <a href="mentions.html">Mentions légales</a>
+          </div>
+        </div>
+        </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>

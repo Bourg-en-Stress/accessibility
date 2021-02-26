@@ -116,6 +116,23 @@ width: 200px;
 }
 
 .sensimg {
-    width: 600px;
-    height: 400px;
+    width: 300px;
+    height: 200px;
+}
+
+.arrow {
+    height: 60px;
+    width: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+#sensinfo {
+    width: 100%;
+    height: auto;
+}
+
+.hlist {
+    list-style: none;
 }
