@@ -32,31 +32,20 @@ h3{
     color: #036ed2;
 }
 
+.navbar-brand
+{
+    text-transform: uppercase;
+}
 /*déssoulignement*/
 
 a:link{
-    text-decoration:none;
-    }
+    text-decoration: none;
+    color: #006a67;
 
+    }
     a:hover{
         color: #141414;
     }
-
-/*emplacement header*/
-
-.namelogo{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 200px;
-
-}
-
-
-.navbar{
-    justify-content: flex-end;
-}
 
 
 .nav-link  {
@@ -67,8 +56,22 @@ a:link{
     color: #006a67;
 }
 
+.navbar-light .navbar-nav .nav-link {
+    color:#006a67;
+}
+
 
 /*liste déroulante*/
+
+.navbar-light .navbar-toggler 
+{
+    color: #006a67;
+    border-color:#006a67;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #141414;
+}
 
 .dropdown-menu{
     border:1px solid #006a67;
@@ -80,16 +83,34 @@ a:link{
     align-items: center;
   }
 
+  #navbarNavDropdown
+  {
+      flex-direction: row-reverse;
+  }
+
+  .navbar-nav
+  {
+      align-items: flex-end;
+  }
+
     /*animations logo*/
 
   #mainIcon {
-    width: 64;
+    width: 100px;
     position: absolute;
-    left: 50vw;
+    left: 50%;
     animation-name: animateIconToCenter;
     animation-duration: 3s;
     animation-timing-function: ease;
 }
+
+@media(max-width:990px)
+    {
+        #mainIcon {
+        width: 80px;
+
+        }
+    }
 
 @keyframes animateIconToCenter {
   from {
@@ -97,7 +118,7 @@ a:link{
     transform: rotate(0deg) scale(0.2);
   }
   to {
-    left: 50vw;
+    left: 50%;
     transform: rotate(720deg) scale(1);
   }
 }
@@ -112,16 +133,3 @@ a:link{
 {
     color: #006a67;
 }
-  @keyframes animateIconToCenter {
-    from {
-      left: 0vw;
-      transform: rotate(0deg) scale(0.2);
-    }
-    to {
-      left: 50vw;
-      transform: rotate(720deg) scale(1);
-    }
-  }
-
-
- 
