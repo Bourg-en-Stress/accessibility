@@ -21,7 +21,7 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-//menu
+/* //menu
 var Button1 = document.getElementById('switch1')
 var Menu1 = document.getElementById('menu1')
 
@@ -45,3 +45,24 @@ Button2.addEventListener('click' , function(){
     }
     Menu1.style.display = 'none'
 })
+*/
+
+
+
+let count = 0 ;
+  
+  document.getElementById('bouton').addEventListener('click', function () {
+
+
+    if (count == 0) {
+        document.getElementById('change-dys').style.fontFamily = 'OpenDyslexic';
+        document.getElementById('change-dys').style.color = 'red';
+        count = 1;
+        
+    } else {
+        document.getElementById('change-dys').style.fontFamily = 'Basic';
+        document.getElementById('change-dys').style.color = 'green';
+        count = 0;
+    }
+    
+});
