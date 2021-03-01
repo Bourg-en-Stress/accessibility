@@ -120,7 +120,12 @@ width: 200px;
     height: 200px;
 }
 
-.arrow {
+html {
+    scroll-behavior: smooth;
+  }
+
+#arrow {
+    display: none;
     height: 60px;
     width: 60px;
     position: fixed;
