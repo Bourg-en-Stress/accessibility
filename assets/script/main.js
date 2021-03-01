@@ -56,12 +56,10 @@ let count = 0 ;
 
     if (count == 0) {
         document.getElementById('change-dys').style.fontFamily = 'OpenDyslexic';
-        document.getElementById('change-dys').style.color = 'red';
         count = 1;
         
     } else {
         document.getElementById('change-dys').style.fontFamily = 'Basic';
-        document.getElementById('change-dys').style.color = 'green';
         count = 0;
     }
     
