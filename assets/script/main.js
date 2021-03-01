@@ -1,3 +1,5 @@
+
+//menu
 var Button1 = document.getElementById('switch1')
 var Menu1 = document.getElementById('menu1')
 
