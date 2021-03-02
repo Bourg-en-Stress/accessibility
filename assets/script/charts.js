@@ -2,7 +2,7 @@ var ctx = document.getElementById('myChart').getContext('2d');
     var myChart = new Chart(ctx, {
         type: 'doughnut',
         data: {
-            labels: ['Valides', 'vieillissement', 'handicap moteur', 'handicap cognitif', 'handicap auditif', 'handicap visuel'],
+            labels: ['% Personnes Valides', ' % dû au vieillissement', ' % handicap moteur', '% handicap cognitif', '% handicap auditif', '% handicap visuel'],
             datasets: [{
                 label: 'Pourcentages handicaps',
                 data: [76, 17, 2, 2, 2, 1],
