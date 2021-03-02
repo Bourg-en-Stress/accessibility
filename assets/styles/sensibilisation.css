@@ -120,18 +120,9 @@ width: 200px;
     height: 200px;
 }
 
-html {
-    scroll-behavior: smooth;
-  }
 
-#arrow {
-    display: none;
-    height: 60px;
-    width: 60px;
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-}
+
+
 
 #sensinfo {
     width: 100%;
