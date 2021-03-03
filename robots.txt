@@ -1,2 +1,11 @@
 User-agent: *
-Disallow: /assets/script/
+
+Disallow: /assets/script
+Disallow: /assets/images
+Disallow: /assets/design
+Disallow: mentions.html
+Disallow: LICENSE
+Disallow: README.md
+Disallow: 
+
+Allow:/*css?*
