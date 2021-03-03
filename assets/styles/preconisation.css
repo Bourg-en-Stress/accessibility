@@ -1,12 +1,6 @@
 
 
-/*marges des fiches métiers*/
- 
-  .container{
-    margin-top: 15%;
-    margin-left: 5%;
-    padding-left: 5%;
- }
+
 
 
  /*couleur titre métier*/
@@ -16,7 +10,12 @@
      }
 
 
-.intro{
-  padding-bottom: 2%;
-}
 
+
+.arrow {
+  height: 60px;
+  width: 60px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  }
