@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d09bd1977e.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link href="../assets/styles/main.css" rel="stylesheet">
@@ -72,12 +73,11 @@
 
         <!--section rendre le web accessible-->
 
-        <section>
+        <section id="cat1">
             <div class="col-md-12 col-sm-12 mt-5 mb-5">
                 <h2>Préconisations</h2>
                 <p>A destination des concepteurs et développeurs de sites et d'applications web, leurs rôles
-                    étant
-                    déterminant.
+                    étant déterminant.
                 </p>
             </div>
 
@@ -156,7 +156,7 @@
         </section>
 
         <!--section normes et bonnes pratiques-->
-        <section>
+        <section id="cat2">
             <div class="col-md-12 col-sm-12 mt-5 mb-5">
 
                 <h3>Normes et bonnes pratiques pour des sites web accessibles</h3>
@@ -165,26 +165,26 @@
                 <p>
                        4 points à prendre en  considération pour rendre votre site web accessible aux personnes
                     handicapés.
-
+                </p>
                 <ul>
 
-                    <li> Rédaction d'un site web accessible 
-                    <li> Conception d'un site web accessible
-                    <li> Développement d'un site web accessible 
-                    <li> Rendre les médias et audio accessible 
-                    </li>
+                    <li> Rédaction d'un site web accessible </li>
+                    <li> Conception d'un site web accessible</li>
+                    <li> Développement d'un site web accessible </li>
+                    <li> Rendre les médias et audio accessible </li>
+
                 </ul>
 
 
-                https://www.w3.org/WAI/design-develop/
+                <a href="https://www.w3.org/WAI/design-develop/"></a>
 
 
-                </p>
 
+            </div>
         </section>
-        </div>
+
         <!--section formation-->
-        <section>
+        <section id="cat3">
 
             <div class="container">
                 <h3>Formation</h3>
@@ -208,139 +208,148 @@
                     est prise en compte en amont et quand les intervenants sont formés, cela ne coûte pas plus cher
                     de
                     produire un service numérique accessible et utilisable par tous ! »
+
                 </p>
 
+                <a href="https://formations.alsacreations.fr/formation-accessibilite.html" target="_blank">
+                    <i class="fas fa-graduation-cap">Formation alsacréation</i></a><br>
 
-                Liens :
-
-                https://formations.alsacreations.fr/formation-accessibilite.html<br>
-
-                https://www.humancoders.com/formations/accessibilite-numerique
-
-                <!--image metier 1-->
-
-                <div class="container overflow-hidden">
+                    <a href="https://www.humancoders.com/formations/accessibilite-numerique" target="_blank">
+                        <i class="fas fa-graduation-cap">Formation humancoders</i></a>
+                
+            </div>
+            <!--image metier 1-->
 
 
+            <div class="row mt-5">
+                <div class="col-md-4 col-sm-12 d-flex justify-content-center mt-5 order-md-1">
                     <img src="../assets/images/preco/chef.jpg" class="rounded float-end" alt="" width="400"
                         height="296">
+                </div>
 
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Chef de projet</h5>
-                            <p class="card-text"> Le Chef de projet (ou Product Owner) a pour mission de prendre
-                                en compte les
-                                contraintes d’accessibilité lors de la rédaction des spécifications
-                                fonctionnelles et des choix techniques qui en découlent.   
-                            </p>
-                            <p class="card-text"><small class="text-muted"></small></p>
-                        </div>
+                <div class="col-md-8 col-sm-12 mt-5 order-md-2">
+                    <div class="card-body">
+                        <h5 class="card-title">Chef de projet</h5>
+                        <p class="card-text"> Le Chef de projet (ou Product Owner) a pour mission de prendre
+                            en compte les
+                            contraintes d’accessibilité lors de la rédaction des spécifications
+                            fonctionnelles et des choix techniques qui en découlent.   
+                        </p>
+
                     </div>
                 </div>
+
+
             </div>
             <!--image metier 2-->
 
-            <div class="container overflow-hidden">
+            <div class="row mt-5">
+                <div class="col-md-4 col-sm-12 d-flex justify-content-center mt-5 order-md-2">
+                    <img src="../assets/images/preco/dev.jpg" class="rounded float-start" alt="" width="400"
+                        height="296">
+                </div>
+                <div class="col-md-8 col-sm-12 mt-5 order-md-1">
+                    <div class="card-body">
+                        <h5 class="card-title">Développeurs</h5>
+                        <p class="card-text">  Un code valide constitue la pierre angulaire de
+                            l’accessibilité. Le développeur est l’acteur le plus important dans le cadre
+                            d’une démarche de mise en accessibilité car c’est lui qui aura la lourde mission
+                            de tout mettre en application. Un code trop complexe est bien souvent source
+                            d’incompatibilité avec les technologies d’assistance. “L’objectif c’est de faire
+                            un site le plus simple possible.
+                        </p>
 
-                <img src="../assets/images/preco/dev.jpg" class="rounded float-start" alt="" width="400" height="296">
-            </div>
-            <div class="col-md-10">
-                <div class="card-body">
-                    <h5 class="card-title">Développeurs</h5>
-                    <p class="card-text">  Un code valide constitue la pierre angulaire de
-                        l’accessibilité. Le développeur est l’acteur le plus important dans le cadre
-                        d’une démarche de mise en accessibilité car c’est lui qui aura la lourde mission
-                        de tout mettre en application. Un code trop complexe est bien souvent source
-                        d’incompatibilité avec les technologies d’assistance. “L’objectif c’est de faire
-                        un site le plus simple possible.
-                    </p>
-                    <p class="card-text"><small class="text-muted"></small></p>
+                    </div>
                 </div>
             </div>
-            </div>
-            </div>
+
             <!--image metier 3-->
 
 
-            <div class="container overflow-hidden">
-                <img src="../assets/images/preco/uxdesugner.jpg" class="rounded float-end" alt="" width="400"
-                    height="296">
-                <div class="col-md-12 col-sm-12 order-md-2">
-                    <div class="card-body"> </div>
-                    <h5 class="card-title">UX Designer</h5>
-                    <p class="card-text">  
+            <div class="row mt-5">
+                <div class="col-md-4 col-sm-12 d-flex justify-content-center mt-5 order-md-1">
+                    <img src="../assets/images/preco/uxdesugner.jpg" class="rounded float-end" alt="" width="400"
+                        height="296">
+                </div>
 
-                         L’UX Designer, garant de l’expérience utilisateur (User expérience), a pour
-                        mission de concevoir l’interface pour le plus grand nombre. Il doit donc penser
-                        à tous les utilisateurs, quel que soit leur profil, et identifier leurs usages
-                        et leurs besoins. En créant un (ou plusieurs) persona en situation de handicap,
-                        ce dernier s’assure de ne pas oublier les utilisateurs ayant des besoins
-                        particuliers d’accessibilité. Dans le cadre d’une refonte, il pourra également
-                        aller à la rencontre d’utilisateurs en situation de handicap pour identifier les
-                        points de friction récurrents sur l’interface existante afin de l’optimiser. Il
-                        doit également se tenir au fait des bonnes pratiques d’accessibilité en
-                        conception et concevoir l’interface en fonction de ces dernières. 
+                <div class="col-md-8 col-sm-12 mt-5 order-md-2">
+                    <div class="card-body">
+                        <h5 class="card-title">UX Designer</h5>
+                        <p class="card-text">  
 
+                            L’UX Designer, garant de l’expérience utilisateur (User expérience), a pour
+                            mission de concevoir l’interface pour le plus grand nombre. Il doit donc penser
+                            à tous les utilisateurs, quel que soit leur profil, et identifier leurs usages
+                            et leurs besoins. En créant un (ou plusieurs) persona en situation de handicap,
+                            ce dernier s’assure de ne pas oublier les utilisateurs ayant des besoins
+                            particuliers d’accessibilité. Dans le cadre d’une refonte, il pourra également
+                            aller à la rencontre d’utilisateurs en situation de handicap pour identifier les
+                            points de friction récurrents sur l’interface existante afin de l’optimiser. Il
+                            doit également se tenir au fait des bonnes pratiques d’accessibilité en
+                            conception et concevoir l’interface en fonction de ces dernières. 
 
-                    </p>
-                    <p class="card-text"><small class="text-muted"></small></p>
-
+                        </p>
+                    </div>
                 </div>
             </div>
-            </div>
+
 
             <!--image metier 4-->
-            <div class="container overflow-hidden">
 
 
-                <img src="../assets/images/preco/ui designer.jpg" alt="" width="400" height="296">
+            <div class="row mt-5">
+                <div class="col-md-4 col-sm-12 d-flex justify-content-center mt-5 order-md-2">
+                    <img src="../assets/images/preco/ui designer.jpg" alt="" width="400" height="296">
+                </div>
 
 
-
-                <div class="col-md-12 col-sm-12 order-md-2">
+                <div class="col-md-8 col-sm-12 mt-5 order-md-1">
                     <div class="card-body">
                         <h5 class="card-title">DA / UI Designer</h5>
                         <p class="card-text">
                              
-                             Le Directeur Artistique ou le Designer d’interface aura à sa charge de
+                            Le Directeur Artistique ou le Designer d’interface aura à sa charge de
                             s’assurer que la couche graphique de l’interface permettra au plus grand nombre
                             de percevoir tous les éléments et d’accéder à l’information. Le choix des
                             couleurs devra notamment se faire en respectant les contraintes de ratio de
                             contrastes imposés par le RGAA.
 
                         </p>
-                        <p class="card-text"><small class="text-muted"></small></p>
+
                     </div>
                 </div>
             </div>
-            </div>
+
             <!--image metier 5-->
 
-            <div class="container overflow-hidden">
 
-                <div class="col-md-12 col-sm-12 mt-5 mb-5">
+
+            <div class="row mt-5">
+                <div class="col-md-4 col-sm-12 d-flex justify-content-center mt-5 order-md-1">
                     <img src="../assets/images/preco/testeurs.jpg" class="rounded float-end" alt="" width="400"
                         height="296">
                 </div>
+                <div class="col-md-8 col-sm-12 mt-5 order-md-1">
+                    <div class="card-body">
+                        <h5 class="card-title"> Testeurs</h5>
 
-                <div class="card-body">
-                    <h5 class="card-title"> Testeurs</h5>
+                        <p class="text-start">    
+                            Si les tests sont réalisés en interne par des membres de l’équipe, les
+                            personnes en charge des tests en cours de production devront également tester le
+                            bon fonctionnement de tous les composants en utilisant diverses technologies
+                            d’assistance et en simulant divers mode de navigation. S’il est prévu de faire
+                            tester l’interface par de vrais utilisateurs, les personnes en charge du
+                            recrutement des participants (Chef de projet) devront s’assurer que tous les
+                            types de handicaps sont représentés par les testeurs recrutés. 
 
-                    <p class="text-start">  
-                         
-                    <p>
-                        Si les tests sont réalisés en interne par des membres de l’équipe, les
-                        personnes en charge des tests en cours de production devront également tester le
-                        bon fonctionnement de tous les composants en utilisant diverses technologies
-                        d’assistance et en simulant divers mode de navigation. S’il est prévu de faire
-                        tester l’interface par de vrais utilisateurs, les personnes en charge du
-                        recrutement des participants (Chef de projet) devront s’assurer que tous les
-                        types de handicaps sont représentés par les testeurs recrutés. 
+                        </p> 
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-12 col-sm-12 mt-5">
 
-                    </p> 
-
-                    <p>
-                        Chez nos voisins britanniques “Au Parlement britannique, lors de l’organisation
+                    <p>Chez nos voisins britanniques “Au Parlement britannique, lors de l’organisation
                         de tests, le recrutement des participants n’est pas forcément axé sur
                         l’accessibilité car les équipes savent qu’il y aura un audit dédié à
                         l’accessibilité en fin de projet. Mais au Gouvernement (Government Digital
@@ -349,13 +358,9 @@
                         chaque sprint, des tests sont organisés regroupant au moins 8 participants dont
                         au moins 2 ou 3 en situation de handicap. Ces tests sont obligatoires.”
                     </p>
-
-                    </p>
-                    <p class="card-text"><small class="text-muted"></small></p>
                 </div>
             </div>
-            </div>
-            </div>
+
 
         </section>
         <!--image metier 6-->
@@ -363,116 +368,102 @@
 
         <!--image metier7-->
 
-        <div class="container overflow-hidden">
+        <div class="row mt-5">
+            <div class="col-md-4 col-sm-12 d-flex justify-content-center mt-5 order-md-2">
+                <img src="../assets/images/preco/audit.jpg" alt="" width="400" height="296">
+            </div>
+            <div class="col-md-8 col-sm-12 mt-5 order-md-1">
+                <div class="card-body">
+                    <h5 class="card-title">Auditeur </h5>
 
+                    <p class="card-text">  
 
-            <div class="row g-0">
-                <div class="col-md-4">
-                    <img src="../assets/images/preco/audit.jpg" alt="" width="400" height="296">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Auditeur </h5>
+                         Un audit de fin de projet devra être prévu afin de vérifier la conformité de
+                        l’interface au RGAA. Évaluer toutes les pages d’un site web est bien souvent trop
+                        chronophage, c’est pourquoi l’auditeur sélectionnera les pages les plus
+                        emblématiques du site et celles apportant le plus de valeur à l’utilisateur. Il
+                        devra ensuite vérifier rigoureusement et pour chacune des pages sélectionnées, tous
+                        les critères du RGAA les uns à la suite des autres en effectuant l’intégralité des
+                        tests proposés dans le référentiel. 
 
-                        <p class="card-text">  
+                    </p>
 
-                             Un audit de fin de projet devra être prévu afin de vérifier la conformité de
-                            l’interface au RGAA. Évaluer toutes les pages d’un site web est bien souvent trop
-                            chronophage, c’est pourquoi l’auditeur sélectionnera les pages les plus
-                            emblématiques du site et celles apportant le plus de valeur à l’utilisateur. Il
-                            devra ensuite vérifier rigoureusement et pour chacune des pages sélectionnées, tous
-                            les critères du RGAA les uns à la suite des autres en effectuant l’intégralité des
-                            tests proposés dans le référentiel. 
-
-                        </p>
-                        <p class="card-text"><small class="text-muted"></small></p>
-                    </div>
                 </div>
             </div>
         </div>
+
 
         <!--image metier 8-->
 
-        <div class="container overflow-hidden">
-
-            <div class="col-md-12 col-sm-12 mt-5 mb-5">
+        <div class="row mt-5">
+            <div class="col-md-4 col-sm-12 d-flex justify-content-center mt-5 order-md-1">
                 <img src="../assets/images/preco/contribu.jpg" alt="400" width="" height="296">
             </div>
+            <div class="col-md-8 col-sm-12 mt-5 order-md-1">
+                <div class="card-body">
+                    <h5 class="card-title"> Contributeur </h5>
 
-            <div class="card-body">
-                <h5 class="card-title"> Contributeur </h5>
+                    <p class="card-text">  
+                        Comme énoncé précédemment, une démarche de mise en accessibilité ne doit pas
+                        s’arrêter à l’audit qui suit la mise en production du site, mais doit se poursuivre
+                        lors de la phase d’exploitation car l’accessibilité numérique n’est pas un état
+                        définitif et n’est jamais acquise, elle est par nature évolutive. En effet, une
+                        publication web n’est pas figée et évolue dans le temps en fonction des mises à
+                        jours éditoriales et techniques. Le contributeur doit donc veiller à renseigner
+                        correctement les alternatives textuelles des contenus non textuels tels que les
+                        images, les vidéos, les graphiques… Il doit par exemple également s’assurer que les
+                        textes sont compréhensibles dans un français simple, que les tableaux sont
+                        construits correctement et que les fichiers disponibles au téléchargement sont
+                        accessibles (PDF, Word, Powerpoint…). 
+                    </p>
 
-                <p class="card-text">  
-                     
-                    Comme énoncé précédemment, une démarche de mise en accessibilité ne doit pas
-                    s’arrêter à l’audit qui suit la mise en production du site, mais doit se poursuivre
-                    lors de la phase d’exploitation car l’accessibilité numérique n’est pas un état
-                    définitif et n’est jamais acquise, elle est par nature évolutive. En effet, une
-                    publication web n’est pas figée et évolue dans le temps en fonction des mises à
-                    jours éditoriales et techniques. Le contributeur doit donc veiller à renseigner
-                    correctement les alternatives textuelles des contenus non textuels tels que les
-                    images, les vidéos, les graphiques… Il doit par exemple également s’assurer que les
-                    textes sont compréhensibles dans un français simple, que les tableaux sont
-                    construits correctement et que les fichiers disponibles au téléchargement sont
-                    accessibles (PDF, Word, Powerpoint…). 
-                </p>
-                <p class="card-text"><small class="text-muted"></small></p>
+                </div>
             </div>
         </div>
-        </div>
-        </div>
+
 
         <!--image 9-->
-        <div class="container overflow-hidden">
-
-
-            <div class="col-md-10 col-sm-10 mt-5 mb-5">
+        <div class="row mt-5">
+            <div class="col-md-4 col-sm-12 d-flex justify-content-center mt-5 order-md-2">
                 <img src="../assets/images/preco/utilisateur.jpg" class="rounded float-end" alt="" width="400"
                     height="296">
             </div>
 
+            <div class="col-md-8 col-sm-12 mt-8 order-md-1">
+                <div class="card-body">
+                    <h5 class="card-title">Utilisateur </h5>
 
-            <div class="card-body">
-                <h5 class="card-title">Utilisateur </h5>
+                    <p class="card-text">
+                         
+                        Enfin, l’utilisateur final de l’interface a pour responsabilité de régulièrement
+                        mettre à jour son navigateur et ses technologies d’assistance pour bénéficier des
+                        avancées techniques en matière d’accessibilité. Il doit également signaler tout
+                        défaut d’accessibilité qu’il rencontre aux responsables du site ou de l’application
+                        concernée. </p>
+                    <p>
+                        Ce faisant, il contribue à accélérer la prise de conscience des équipes
+                        de production en les alertant et motive les démarches de mise en accessibilité.
+                        Cette liste n’a pas la prétention d’être exhaustive, de nombreux autres
+                        interlocuteurs peuvent intervenir lors d’un projet et avoir une incidence sur son
+                        accessibilité. </p>
+                     <p>
+                        Ainsi, les DSI par exemple, lorsqu’elles sont sollicitées, ne
+                        devraient pas imposer de logiciels ou solutions informatiques connues pour présenter
+                        des défauts d’accessibilité. 
+                    </p>
+                    </p>
 
-                <p class="card-text">  
-
-                <p>
-                    Enfin, l’utilisateur final de l’interface a pour responsabilité de régulièrement
-                    mettre à jour son navigateur et ses technologies d’assistance pour bénéficier des
-                    avancées techniques en matière d’accessibilité. Il doit également signaler tout
-                    défaut d’accessibilité qu’il rencontre aux responsables du site ou de l’application
-                    concernée. </p>
-                <p>
-                    Ce faisant, il contribue à accélérer la prise de conscience des équipes
-                    de production en les alertant et motive les démarches de mise en accessibilité.
-                    Cette liste n’a pas la prétention d’être exhaustive, de nombreux autres
-                    interlocuteurs peuvent intervenir lors d’un projet et avoir une incidence sur son
-                    accessibilité. </p>
-                 <p>
-                    Ainsi, les DSI par exemple, lorsqu’elles sont sollicitées, ne
-                    devraient pas imposer de logiciels ou solutions informatiques connues pour présenter
-                    des défauts d’accessibilité. 
-                </p>
-                </p>
-                <p class="card-text"><small class="text-muted"></small></p>
+                </div>
             </div>
         </div>
-        </div>
-        </div>
-        </div>
 
 
 
 
 
 
-        </div>
 
 
-        </div>
-
-        </div>
 
         <div>
             <a href="#arrowtarget"><img class="arrow" src="../assets/images/FlecheHaut.svg" alt=""></a>
