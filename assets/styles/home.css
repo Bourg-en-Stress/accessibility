@@ -40,6 +40,12 @@ h2 a
     bottom: 20px;
 }
 
+#carrousel{
+    margin-top: 64px;
+    margin-bottom: 64px;
+    padding:24px;
+    text-align: center;
+  }
 
 @media(max-width:990px)
     {
