@@ -68,3 +68,18 @@ let count = 0 ;
 
 
 
+let truc = 0 ;
+  
+  document.getElementById('show-page').addEventListener('click', function () {
+
+
+    if (truc == 0) {
+        document.getElementById('page-home').style.display = 'block';
+        truc = 1;
+        
+    } else {
+        document.getElementById('page-home').style.display = 'none';
+        truc = 0;
+    }
+    
+});
