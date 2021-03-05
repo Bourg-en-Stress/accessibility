@@ -10,20 +10,20 @@
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <link href="assets/styles/main.css" rel="stylesheet">
   <link href="assets/styles/home.css" rel="stylesheet">
+  <link href="assets/styles/carrousel.css" rel="stylesheet">
   <title>Hack'ccess-Accueil</title>
 </head>
 
 <body id="change-dys">
   <main class="container">
-
     <!--Barre de navigation-->
     <header>
       <nav class="navbar navbar-expand-lg navbar-light mt-3">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" id="show-page-home">
             <h1>Hack'cess</h1>
           </a>
-          <a class="header" href="index.html"><img id="mainIcon" src="assets/images/index/logo-terre.png"
+          <a class="header" id="show-page-home"><img id="mainIcon" src="assets/images/index/logo-terre.png"
               alt="logo accessibilite-numerique"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,9 +37,9 @@
                   Sensibilisation
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="pages/sensibilisation.html">L'Accessibilité</a></li>
-                  <li><a class="dropdown-item" href="pages/sensibilisation.html#cat2">Les Handicaps</a></li>
-                  <li><a class="dropdown-item" href="pages/sensibilisation.html#cat3">Les Problèmatiques</a></li>
+                  <li><a class="dropdown-item" id="show-page-accessibility">L'Accessibilité</a></li>
+                  <li><a class="dropdown-item" id="show-page-handicap">Les Handicaps</a></li>
+                  <li><a class="dropdown-item" id="show-page-issues">Les Problèmatiques</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -48,9 +48,9 @@
                   Préconisations
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="pages/preconisation.html#cat1">Rendre Accessible</a></li>
-                  <li><a class="dropdown-item" href="pages/preconisation.html#cat2">Normes et Bonnes pratiques</a></li>
-                  <li><a class="dropdown-item" href="pages/preconisation.html#cat3">Formation</a></li>
+                  <li><a class="dropdown-item" id="show-page-allow-access">Rendre Accessible</a></li>
+                  <li><a class="dropdown-item" id="show-page-good-practices">Normes et Bonnes pratiques</a></li>
+                  <li><a class="dropdown-item" id="show-page-learning">Formation</a></li>
                 </ul>
               </li>
             </ul>
@@ -59,144 +59,817 @@
       </nav>
       </div>
     </header>
-    <div class="d-grid gap-2">
-      <button id="bouton" class="btn btn-outline-primary" type="button">Dyslexique ? Changez la typo !</button>
-    </div>
-
-    <div class="col-md-12 col-sm-12 mt-5 mb-5">
-      <h2 tabindex="0">À propos</h2>
-    </div>
-    <div class="row col-md-12 col-sm-12 justify-content-center mt-5 mb-5">
-      <p tabindex="0">
-        Ce site est un
-        support et a pour objectif de sensibiliser
-        le plus grand nombre à la problématique de l'accessibilité numérique en général mais plus précisément pour les
-        personnes handicapées.<br>Il a aussi pour
-        vocation de fournir des  préconisations aux concepteurs de contenu numérique.​<br>Vous y trouverez donc deux
-        sections traitant chacune de ces deux domaines avec notamment des supports
-        visuels, des textes mais aussi des liens utiles.
-      </p>
-    </div>
-
-    <div class="col-md-12 col-sm-12 mt-5 mb-5">
-      <h2 tabindex="0">Quelques chiffres</h2>
-    </div>
-
-    <div class="row mt-5">
-      <div class="col-md-6 col-sm-12 mt-5 text-center">      
-        <img tabindex="0" src="assets/images/index/infograpgie2.png" alt="une image d'ampoule éclairée.">
-          <p tabindex="0" class="text-www"> En 1994, Tim Berners-Lee, le co-créateur du web, a fondé le World Wide Web
-          consortium(W3C).<br><br>Le W3C supervise le développement d'un ensemble de standards pour que le web soit
-          accessible à tous !</p>
+      <div class=" col-md-12 col-sm-12 d-flex">
+        <button id="bouton" class="btn rounded-circle" type="button" aria-describedby="Icone qui applique la police d'écriture « OpenDyslexic »"></button>
+        <div tabindex="0" id="bouton1" class="btn-outline-primary rounded-circle" aria-describedby="Icone qui indique que le site est entièrement accessible en audio-description"></div>
+        <div tabindex="0" id="bouton3" class="btn-outline-primary rounded-circle" aria-describedby="Icone qui indique que le site est entièrement adapté au daltonisme"></div>
       </div>
-      <div class="col-md-6 col-sm-12 mt-5">
-        <img  tabindex="0" class="info" src="assets/images/index/infograpgie.png"
-          alt="Une image de statistiques qui traduit qu'en france, 12 millions de personnes sont touchées par un handicap et seulement 5 % des sites audités ont un niveau de conformité acceptable">
-      </div>
-    </div>
-    <div class="row mt-5 justify-content-center">
-      <div class="col-md-6 col-sm-12 mt-5">
-        <canvas id="myChart" width="120" height="120"></canvas>
-        <!-- <img tabindex="0" class="infog" src="assets/images/index/infograpgie1.png"
-              alt="Une image qui indique que parmi les 25% des personnes touchées par un handicap, 17% le sont à cause du vieillissement.Les 8% restant concernent les handicaps moteurs, cognitifs, visuels et auditifs">
-          -->
-      </div>
-    </div>
+
+
+          <!--HOME -->
+      <div id="page-home">
+        <div id="carrousel" class="js-carrousel  relative pb1">
+          <div class="js-carrousel__container mod--hidden mb1"
+                  data-carrousel-btn-previous-img="assets/images/index/carrousel/left.svg"
+                  data-carrousel-btn-next-img="assets/images/index/carrousel/right.svg"
+                  data-carrousel-btn-previous-text="Voir le contenu précédent"
+                  data-carrousel-btn-next-text="Voir le contenu suivant"
+                  data-carrousel-prefix-class="news"
+                  data-carrousel-span-text-class="invisible"
+                  data-carrousel-transition="slide"
+                  data-carrousel-existing-hx="h2">
     
-    
-
-    <div class="col-md-12 col-sm-12 mt-5 mb-5">
-      <h2 tabindex="0">L'Équipe</h2>
-    </div>
-    <div class="col-md-12 col-sm-12 mt-5 mb-5">
-      <p tabindex="0">Dans le cadre d’un parcours de formation nous sommes 3 stagiaires qui avons pour objectif de concevoir et
-        développer un outil de communication numérique de type site web sur le thème de l'« e-inclusion » des
-        personnes en situation de handicap.<br>Nous avons donc eu la lourde tache de réalisé ce projet de A à Z avec
-        toutes les difficultés que cela implique(respect du cahier des charges, réalisation d’un dossier de
-        conception,de
-        maquettes, respect des délais mais surtout respecter au mieux l’accessibilité pour tous).</p>
-    </div>
-
-    <div class="row justify-content-start">
-      <div class="mb-5" style="max-width:700px;">
-        <div class="row g-0">
-          <div class="col-md-4 col-sm-6 order-md-1">
-            <img class="avat" src="assets/images/index/Avatar-cyril.svg" alt="Avatar de Cyril">
-          </div>
-          <div class="col-md-8">
-            <div tabindex="0" class="card-body">
-              <h5 class="card-title">Cyril</h5>
-              <p class="card-text mt-5">Développeur web et technicien du code unique en son genre ! La plupart des
-                solutions
-                aux
-                problèmes rencontrés lui sont venues en mangeant !<br> Alors attention ne le faites jamais travailler le
-                ventre
-                vide !</p>
+            <div class="js-carrousel__content">
+               <h2>BIENVENUE !</h2>
+               <img src="assets/images/index/carrousel/iStock-500057460-min-750x500.jpg" alt="une place handicapée" style="width:120px;">
+               <p>Nous savons tous ce que ce pictogramme signifie...</p>
+              </div><!--
+        --><div class="js-carrousel__content">
+              <h2>Deuxième zone de contenu</h2>
+               <p>Il est possible de naviguer avec <kbd>Tab</kbd>. Les contrôles ci-dessous se naviguent avec les flèches <kbd>gauche</kbd> et <kbd>droite</kbd>.</p>
+              </div><!--
+        --><div class="js-carrousel__content">
+               <h2>Troisième zone de contenu</h2>
+               <p>Cet exemple comprend des titres <code>h2</code> (qui seront repris pour les boutons ci-dessous), c’est donc un parfait exemple.</p>
+              </div><!--
+        --><div class="js-carrousel__content">
+          <h2>Troisième zone de contenu</h2>
+          <p>Cet exemple comprend des titres <code>h2</code> (qui seront repris pour les boutons ci-dessous), c’est donc un parfait exemple.</p>
+         </div><!--
+          --></div>
+        </div>
+  
+      <div class="col-md-12 col-sm-12 mt-5 mb-5">
+        <h2 tabindex="0">À propos</h2>
+      </div>
+      <div class="row col-md-12 col-sm-12 justify-content-center mt-5 mb-5">
+        <p tabindex="0">
+          Ce site est un support et a pour objectif de sensibiliser le plus grand nombre à la problématique de l'accessibilité numérique en général mais plus précisément pour les personnes handicapées.<br>Il a aussi pour vocation de fournir des  préconisations aux concepteurs de contenu numérique.​<br>Vous y trouverez donc deux sections traitant chacune de ces deux domaines avec notamment des supports visuels, des textes mais aussi des liens utiles.
+        </p>
+      </div>
+  
+      <div class="col-md-12 col-sm-12 mt-5 mb-5">
+        <h2 tabindex="0">Quelques chiffres</h2>
+      </div>
+  
+      <div class="row mt-5">
+        <div class="col-md-6 col-sm-12 mt-5 text-center">      
+          <img tabindex="0" src="assets/images/index/infograpgie2.png" alt="une image d'ampoule éclairée.">
+            <p tabindex="0" class="text-www"> En 1994, Tim Berners-Lee, le co-créateur du web, a fondé le World Wide Web consortium(W3C).<br><br>Le W3C supervise le développement d'un ensemble de standards pour que le web soit accessible à tous !</p>
+        </div>
+        <div class="col-md-6 col-sm-12 mt-5">
+          <img  tabindex="0" class="info" src="assets/images/index/infograpgie.png"
+            alt="Une image de statistiques qui traduit qu'en france, 12 millions de personnes sont touchées par un handicap et seulement 5 % des sites audités ont un niveau de conformité acceptable">
+        </div>
+      </div>
+      <div class="row mt-5 justify-content-center">
+        <div class="col-md-6 col-sm-12 mt-5">
+          <canvas id="myChart" width="120" height="120"></canvas>
+          <!-- <img tabindex="0" class="infog" src="assets/images/index/infograpgie1.png"
+                alt="Une image qui indique que parmi les 25% des personnes touchées par un handicap, 17% le sont à cause du vieillissement.Les 8% restant concernent les handicaps moteurs, cognitifs, visuels et auditifs">
+            -->
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <h2 tabindex="0">Charte graphique</h2>
+          <p>En terme d'accessibilité, les choix les plus difficiles à faire ont étés ceux de la charte graphique.<br>Nous nous sommes demandé quelles étaient les couleurs compatibles avec les 3 formes de daltonisme et nous en avons fait de même en ce qui concerne les polices de caractère pour d'autres formes de handicaps comme la dyslexie et les déficiences visuels.<br>Nous avons dû faire un choix fort entre design ou accessibilité pour le plus grand nombre, la thématique de ce site étant l'accessibilité, nous avons donc opté pour cette dernière au détriment du design.<br>
+          </p>
+        </div>
+      </div>
+      <div class="col-md-12 col-sm-12 mt-5 mb-5">
+        <h2 tabindex="0">L'Équipe</h2>
+      </div>
+      <div class="col-md-12 col-sm-12 mt-5 mb-5">
+        <p tabindex="0">Dans le cadre d’un parcours de formation nous sommes 3 stagiaires qui avons pour objectif de concevoir et développer un outil de communication numérique de type site web sur le thème de l'« e-inclusion » des personnes en situation de handicap.<br>Nous avons donc eu la lourde tache de réalisé ce projet de A à Z avec toutes les difficultés que cela implique(respect du cahier des charges, réalisation d’un dossier de conception,de maquettes, respect des délais mais surtout respecter au mieux l’accessibilité pour tous).</p>
+      </div>
+  
+      <div class="row justify-content-start">
+        <div class="mb-5" style="max-width:700px;">
+          <div class="row g-0">
+            <div class="col-md-4 col-sm-6 order-md-1">
+              <img class="avat" src="assets/images/index/Avatar-cyril.svg" alt="Avatar de Cyril">
+            </div>
+            <div class="col-md-8">
+              <div tabindex="0" class="card-body">
+                <h5 class="card-title">Cyril</h5>
+                <p class="card-text mt-5">Développeur web et technicien du code unique en son genre ! La plupart des solutions aux problèmes rencontrés lui sont venues en mangeant !<br> Alors attention ne le faites jamais travailler le ventre vide !</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="row justify-content-end">
-      <div class="mb-5" style="max-width: 700px;">
-        <div class="row g-0">
-          <div class="col-md-4 col-sm-6">
-            <img class="avat" src="assets/images/index/Avatar-souad.svg" alt="Avatar de Souad">
-          </div>
-          <div class="col-md-8">
-            <div tabindex="0" class="card-body">
-              <h5 class="card-title">Souad</h5>
-              <p class="card-text mt-5">Designeuse web et développeuse web son sens de l'organisation est plus
-                qu'aiguisé au
-                point de pouvoir vous faire refaire tout votre cahier des charges !</p>
+  
+      <div class="row justify-content-end">
+        <div class="mb-5" style="max-width: 700px;">
+          <div class="row g-0">
+            <div class="col-md-4 col-sm-6">
+              <img class="avat" src="assets/images/index/Avatar-souad.svg" alt="Avatar de Souad">
+            </div>
+            <div class="col-md-8">
+              <div tabindex="0" class="card-body">
+                <h5 class="card-title">Souad</h5>
+                <p class="card-text mt-5">Designeuse web et développeuse web son sens de l'organisation est plus qu'aiguisé au point de pouvoir vous faire refaire tout votre cahier des charges !</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="row justify-content-start">
-      <div class="mb-5" style="max-width:700px;">
-        <div class="row g-0">
-          <div class="col-md-4 col-sm-6 order-md-1">
-            <img class="avat" src="assets/images/index/Avatar-amanda.svg" alt="Avatar d'Amanda">
-          </div>
-          <div class="col-md-8">
-            <div tabindex="0" class="card-body">
-              <h5 class="card-title">Amanda</h5>
-              <p class="card-text mt-5">Designeuse et développeuse dans l'âme, l'éditeur de code est son meilleur ami.
-                Enjouée, dynamique, on ne s'ennuie jamais avec elle. Son surnom est miss blablabla.</p>
+  
+      <div class="row justify-content-start">
+        <div class="mb-5" style="max-width:700px;">
+          <div class="row g-0">
+            <div class="col-md-4 col-sm-6 order-md-1">
+              <img class="avat" src="assets/images/index/Avatar-amanda.svg" alt="Avatar d'Amanda">
+            </div>
+            <div class="col-md-8">
+              <div tabindex="0" class="card-body">
+                <h5 class="card-title">Amanda</h5>
+                <p class="card-text mt-5">Designeuse et développeuse dans l'âme, l'éditeur de code est son meilleur ami. Enjouée, dynamique, on ne s'ennuie jamais avec elle. Son surnom est miss blablabla.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="row justify-content-end">
-      <div class="mb-5" style="max-width:700px;">
-        <div class="row g-0">
-          <div class="col-md-4 col-sm-6">
-            <img class="avat" src="assets/images/index/Avatar-boris.svg" alt="Avatar de Boris">
-          </div>
-          <div class="col-md-8">
-            <div tabindex="0" class="card-body">
-              <h5 class="card-title">Boris</h5>
-              <p class="card-text mt-5">Commanditaire du projet accessibilité, professionnel, pointilleux, mais super
-                cool
-                !<br> Avec
-                lui, la moindre petite erreur a été détectée en l'espace d'un quart de seconde.</p>
+  
+      <div class="row justify-content-end">
+        <div class="mb-5" style="max-width:700px;">
+          <div class="row g-0">
+            <div class="col-md-4 col-sm-6">
+              <img class="avat" src="assets/images/index/Avatar-boris.svg" alt="Avatar de Boris">
+            </div>
+            <div class="col-md-8">
+              <div tabindex="0" class="card-body">
+                <h5 class="card-title">Boris</h5>
+                <p class="card-text mt-5">Commanditaire du projet accessibilité, professionnel, pointilleux, mais super cool!<br> Avec lui, la moindre petite erreur a été détectée en l'espace d'un quart de seconde.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+
+
+
+
+
+
+
+      </div>
+
+          <!--HOME -->
+           <div id="page-accessibility">
+            <h2 tabindex="0" class="col-md-12 col-sm-12 mt-5 mb-5 text-center">Sensibilisation</h2>
+            <!--categorie accessibilité-->
+            <section class="col-md-12 col-sm-12 mt-5 mb-5">
+                <h3 tabindex="0" id="cat1">Qu’est ce que l’ accessibilité ?</h3>
+                <div class="d-block d-md-flex mt-3">
+                    <p class="col-md-6 col-sm-12">L’accessibilité numérique  permet aux personnes en situation de handicap
+                        d’accéder aux contenus et
+                        services digitaux. Pour ce faire, on applique aux interfaces digitales des normes d’accessibilité
+                        émises par le W3C (World Wide Web Consortium) et pensées par des ergonomes pour chaque type de
+                        handicap.
+                        L’accessibilité couvre également des notions liées à la compatibilité matérielle et logicielle ainsi
+                        qu’à la performance des réseaux. Tous les utilisateurs, sans discrimination, pourront alors
+                        Percevoir - Comprendre - Naviguer, mais aussi Interagir - Créer du contenu - Apporter leur
+                        contribution à l’univers numérique.
+                        Outre son utilité première, à savoir la mise à disposition des contenus aux publics sans
+                        discrimination, l’accessibilité numérique présente de nombreux avantages – et pas des moindres – qui
+                        constituent autant d’opportunités pour les entreprises, bien au-delà d’une obligation légale.
+                    </p>
+                    <img class="col-md-6 col-sm-12 img-fluid" src="assets/images/sensibilisation/sens-puzzle.jpg" alt="">
+                </div>
+            </section>
+           </div>
+          
+          <!--HOME -->
+           <div id="page-handicap">
+       <!--categorie handicap-->
+       <section class="col-md-12 col-sm-12 mt-5 mb-5  d-none d-md-block">
+        <h3 tabindex="0" id="cat2" class="text-center">Les différentes  formes d'handicaps</h3>
+        <p>Plusieurs handicap peut rendre un site inaccessible :</p>
+        <div class="d-md-flex justify-content-evenly infographie">
+            <div class="col-md-3 col-sm-12 bg-info d-flex flex-column">
+                <img class="sensicon mt-3" src="assets/images/sensibilisation/visibility.svg"
+                    alt="icône déficience visuelle">
+                <strong class="text-center mt-3 mb-3">Visuelle</strong>
+                <strong class="ms-1">contrainte:</strong>
+                <ul class="listepuce">
+                    <li>Difficulté de lire les textes</li>
+                    <li>Difficulté de différencier les couleurs</li>
+                    <li>Aveuglement totale</li>
+                </ul>
+                <strong class="ms-1">solution:</strong>
+                <ul class="listepuce">
+                    <li>Agrandisseur de texte proposé par le navigateur</li>
+                    <li>Logiciel d'agrandissement</li>
+                    <li>Lecteur d'ecran pilotant une synthèse vocale ou un afficheur braille</li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-12 bg-danger d-flex flex-column">
+                <img class="sensicon mt-3" src="assets/images/sensibilisation/hearing.svg" alt="icône auditif">
+                <strong class="text-center mt-3 mb-3">Auditif</strong>
+                <strong class="ms-1">contrainte:</strong>
+                <ul class="listepuce">
+                    <li>Impossibilité de lire les contenus audio</li>
+                </ul>
+                <strong class="ms-1">solution:</strong>
+                <ul class="listepuce">
+                    <li>Transcription textuelle des contenu audiovisuels</li>
+                    <li>Traduction des contenu en langue des signes</li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-12 bg-success d-flex flex-column">
+                <img class="sensicon mt-3" src="assets/images/sensibilisation/wheelchair.svg"
+                    alt="icône handicap moteur">
+                <strong class="text-center mt-3 mb-3">Motrices</strong>
+                <strong class="ms-1">contrainte:</strong>
+                <ul class="listepuce">
+                    <li>Incapacité d'utiliser clavier ou souris non adapté</li>
+                </ul>
+                <strong class="ms-1">solution:</strong>
+                <ul class="listepuce">
+                    <li>Souris adapté</li>
+                    <li>Accès clavier</li>
+                    <li>Logiciels de reconnaissance vocale</li>
+                    <li>Comutateur d'accès</li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-12 bg-warning d-flex flex-column">
+                <img class="sensicon mt-3" src="assets/images/sensibilisation/head.svg" alt="icône cognitive">
+                <strong class="text-center mt-3 mb-3">Cognitive</strong>
+                <strong class="ms-1">contrainte:</strong>
+                <ul class="listepuce">
+                    <li>Nécessité de bénéficier de contenu adapté et facilement accessible</li>
+                    <li>Nécessité d’un accompagnement pour être autonome dans
+                        l’utilisation.
+                    </li>
+                </ul>
+                <strong class="ms-1">solution:</strong>
+                <ul class="listepuce">
+                    <li>Navigation assisté par icônes</li>
+                    <li>Logiciels de reconnaissance vocale</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--mobile-->
+    <section class="d-md-none infographie">
+        <div class="accordion" id="accordionExample">
+            <!--1-->
+            <div class="accordion-item">
+                <h2 class="accordion-header bg-info" id="headingOne">
+                    <button class="accordion-button infographie" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <img class="sensicon mt-3" src="assets/images/sensibilisation/visibility.svg"
+                            alt="icône déficience visuelle">
+                        <strong class="mt-3 mb-3">Visuelle</strong>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body bg-info">
+                        <strong class="ms-1">contrainte:</strong>
+                        <ul class="listepuce">
+                            <li>Difficulté de lire les textes</li>
+                            <li>Difficulté de différencier les couleurs</li>
+                            <li>Aveuglement totale</li>
+                        </ul>
+                        <strong class="ms-1">solution:</strong>
+                        <ul class="listepuce">
+                            <li>Agrandisseur de texte proposé par le navigateur</li>
+                            <li>Logiciel d'agrandissement</li>
+                            <li>Lecteur d'ecran pilotant une synthèse vocale ou un afficheur braille</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--2-->
+            <div class="accordion-item">
+                <h2 class="accordion-header bg-danger" id="headingTwo">
+                    <button class="accordion-button collapsed infographie" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <img class="sensicon mt-3" src="assets/images/sensibilisation/hearing.svg"
+                            alt="icône auditif">
+                        <strong class="text-center mt-3 mb-3">Auditif</strong>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body bg-danger">
+                        <strong class="ms-1">contrainte:</strong>
+                        <ul class="listepuce">
+                            <li>Impossibilité de lire les contenus audio</li>
+                        </ul>
+                        <strong class="ms-1">solution:</strong>
+                        <ul class="listepuce">
+                            <li>Transcription textuelle des contenu audiovisuels</li>
+                            <li>Traduction des contenu en langue des signes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--3-->
+            <div class="accordion-item">
+                <h2 class="accordion-header bg-success" id="headingThree">
+                    <button class="accordion-button collapsed infographie" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <img class="sensicon mt-3" src="assets/images/sensibilisation/wheelchair.svg"
+                            alt="icône handicap moteur">
+                        <strong class="text-center mt-3 mb-3">Motrices</strong>
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body bg-success">
+                        <strong class="ms-1">contrainte:</strong>
+                        <ul class="listepuce">
+                            <li>Incapacité d'utiliser clavier ou souris non adapté</li>
+                        </ul>
+                        <strong class="ms-1">solution:</strong>
+                        <ul class="listepuce">
+                            <li>Souris adapté</li>
+                            <li>Accès clavier</li>
+                            <li>Logiciels de reconnaissance vocale</li>
+                            <li>Comutateur d'accès</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--4-->
+            <div class="accordion-item">
+                <h2 class="accordion-header bg-warning" id="headingFour">
+                    <button class="accordion-button collapsed infographie" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <img class="sensicon mt-3" src="assets/images/sensibilisation/head.svg"
+                            alt="icône cognitive">
+                        <strong class="text-center mt-3 mb-3">Cognitive</strong>
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body bg-warning">
+                        <strong class="ms-1">contrainte:</strong>
+                        <ul class="listepuce">
+                            <li>Nécessité de bénéficier de contenu adapté et facilement accessible</li>
+                            <li>Nécessité d’un accompagnement pour être autonome dans
+                                l’utilisation.
+                            </li>
+                        </ul>
+                        <strong class="ms-1">solution:</strong>
+                        <ul class="listepuce">
+                            <li>Navigation assisté par icônes</li>
+                            <li>Logiciels de reconnaissance vocale</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+           </div>          
+          
+          <!--HOME -->
+          <div id="page-issues">
+        <!--categorie problematique-->
+        <section class="col-md-12 col-sm-12 mt-5 mb-5">
+          <h3 tabindex="0" id="cat3">Les problématiques rencontrées </h3>
+          <div class="d-md-flex">
+              <p class="col-md-6 col-sm-12">Pour agir contre l’exclusion sociale des personnes en situation de
+                  handicap, c’est souvent à
+                  l’accessibilité des infrastructures que l’on pense (bâtiments ou transports en commun par exemple).
+                  Cependant, l’accessibilité ne s’applique pas uniquement à ces domaines. Elle s’étend aussi à l’usage
+                  que nous avons tous des sites web, applications et autres outils digitaux.</p>
+              <img class="sensimg" src="assets/images/sensibilisation/sens-probleme.jpg" alt="">
+          </div>
+          <p>En Europe environ 20% de la population sont porteuse d'un handicap , or ne rien mettre en œuvre pour
+              faciliter l'accès à son site c'est comme ignorer un cinquième de ses internautes.
+              Aujourd'hui , de nombreux site utilise le javascript pour rendre une page dynamique, mais souvent la
+              sémantique des pages en vient a être négligée, pourtant une bonne sémantique permet de facilité la
+              lecture des synthèses vocale.
+              De plus c'est fonctions sont généralement prévus pour fonctionner à la souris en oubliant le clavier ou
+              des commande vocales .
+          </p>
+      </section>
+          </div>         
+          
+          <!--HOME -->
+          <div id="page-allow-access">
+        <!--section rendre le web accessible-->
+
+        <section>
+          <div class="col-md-12 col-sm-12 mt-5 mb-5">
+              <h2 tabindex="0">Préconisations</h2>
+              <p tabindex="0">A destination des concepteurs et développeurs de sites et d'applications web, leurs
+                  rôles
+                  étant déterminant.
+              </p>
+          </div>
+
+
+
+
+
+          <img src="assets/images/preco/webaccess.jpg" class="col-md-6 float-md-end mb-3 ms-md-3"
+              alt="image flat design personne en fauteuil roulant face à un écran d'ordinateur avec les icones de l'accessibilité"
+              width="200" height="396">
+
+          <div class="col-md-12 col-sm-12 mt-5 mb-5">
+              <h3 tabindex="0">Rendre le web accessible</h3>
+
+              <p tabindex="0">
+
+                  En général, tout le monde s’accorde pour dire que l’accessibilité est une cause juste et
+                  personne ne
+                  réfute
+                  le fait que tous les sites devraient être accessibles. Toutefois, dans les faits,
+                  l’accessibilité est
+                  bien
+                  trop souvent traitée comme une surcouche et n’est vraiment prise en considération qu’une
+                  fois la phase
+                  de
+                  production terminée, lors d’un audit effectué par un expert en accessibilité certifié.</p>
+
+              <p tabindex="0">En réalité, la mise en accessibilité ne peut se résumer à un audit en fin de projet car
+                  il
+                  s’agit d’une
+                  vraie démarche à initier le plus tôt possible. </p>
+
+              <p tabindex="0">Pour les personnes en situation de handicap, les services numériques représentent une
+                  opportunité unique
+                  d’inclusion dans la société à condition que ces services soient conçus et développés selon
+                  des règles
+                  d’accessibilité. En effet, comme le numérique est présent partout aujourd’hui, un manque
+                  d’accessibilité
+                  conduit irrémédiablement à des situations d’exclusion, impossibilité d’occuper un emploi,
+                  d’accéder aux
+                  droits, de profiter des services numériques, d’accéder à l’information…»</p> 
+
+              <p tabindex="0">Tout d'abord comprendre les difficultés rencontrées par les porteurs d'handicaps est
+                  primordial. 
+                  Dans un deuxième temps s'approprier les normes et les bonnes pratiques grâce notamment aux
+                  ressources en
+                  ligne.</p>
+          </div>
+          <div class="card text-white bg-success mb-3" style="max-width: rem;">
+              <div class="card-header">
+                  <p tabindex="0">
+                      Que dit la loi ?
+                  </p>
+              </div>
+              <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <p class="card-text">
+                  <p tabindex="0">En France, la loi du 11 février 2005, “Pour l’égalité des droits et des chances, la
+                      participation et la
+                      citoyenneté des personnes handicapées” impose, dans son article 47, “l’accessibilité des
+                      services de
+                      communication publique en ligne pour les services de l’Etat, des collectivités territoriales
+                      et des
+                      établissements publics qui en dépendent”, dans un premier temps. Dans d’autres pays cette
+                      obligation
+                      existe
+                      depuis les années 90, c’est le cas des Etats-Unis.</p>
+
+
+                  <p tabindex="0">En outre, le World Wide Web Consortium (W3C), organisme de normalisation, préconise
+                      le «
+                      web
+                      pour tous »,
+                      c’est-à-dire que tout le monde doit pouvoir accéder aux innovations technologiques même sans
+                      tenir
+                      compte de
+                      leur matériel, leurs logiciels, leur infrastructure réseau, leur langue maternelle, leur
+                      culture, leur
+                      situation géographique et leurs capacités physiques ou mentales.</p>
+                  </p>
+              </div>
+
+
+                   
+
+
+
+      </section>
+          </div>         
+          
+          <!--HOME -->
+          <div id="page-good-practices">
+        <!--section normes et bonnes pratiques-->
+        <section id="cat2">
+          <div class="col-md-12 col-sm-12 mt-5 mb-5">
+
+              <h3 tabindex="0">Normes et bonnes pratiques pour des sites web accessibles</h3>
+
+
+              <p tabindex="0">
+                     4 points à prendre en  considération pour rendre votre site web accessible aux personnes
+                  handicapés.
+              </p>
+              <ul>
+
+                  <li tabindex="0"> Rédaction d'un site web accessible </li>
+                  <li tabindex="0"> Conception d'un site web accessible </li>
+                  <li tabindex="0"> Développement d'un site web accessible </li>
+                  <li tabindex="0"> Rendre les médias et audio accessible </li>
+
+              </ul>
+
+
+              <a href="https://www.w3.org/WAI/design-develop/" target="_blank">
+                  <i class="fas fa-link"> W3</i></a>
+
+
+
+          </div>
+      </section>
+          </div>
+
+          <!--HOME -->
+          <div id="page-learning">
+        <!--section formation-->
+        <section id="cat3">
+
+          <div class="container">
+              <h3 tabindex="0">Formation</h3>
+
+              <p tabindex="0">
+                  « Presque un développeur sur 2 n’a jamais entendu parler de l’accessibilité numérique » </p>
+
+              Un conseil pour nos formateurs :
+
+              </p>
+              <p tabindex="0">
+                  Comme la sécurité ou le respect des données personnelles, l’accessibilité numérique doit
+                  être enseignée
+                  à l’ensemble des professionnels du numérique en formation initiale ou continue. Un module de
+                  sensibilisation
+                  intégré au socle commun pour l’ensemble des apprenants serait déjà une énorme avancée.Quand
+                  l’accessibilité
+                  est prise en compte en amont et quand les intervenants sont formés, cela ne coûte pas plus cher
+                  de
+                  produire un service numérique accessible et utilisable par tous ! »
+
+              </p>
+
+              <a href="https://formations.alsacreations.fr/formation-accessibilite.html" target="_blank">
+                  <i class="fas fa-graduation-cap">Formation Alsacréation</i></a><br>
+
+              <a href="https://www.humancoders.com/formations/accessibilite-numerique" target="_blank">
+                  <i class="fas fa-graduation-cap">Formation Humancoders</i></a>
+
+          </div>
+          <!--image metier 1-->
+
+
+          <div class="row mt-5">
+              <div class="col-md-4 col-sm-12 d-flex justify-content-center mt-5 order-md-1">
+                  <img src="assets/images/preco/chef.jpg" class="rounded float-end"
+                      alt="personnage homme flat design devant trois écran responsivité" width="400" height="296">
+              </div>
+              <p tabindex="0"> Que peut-on faire pour améliorer l’accessibilité numérique ?</p>
+              <div class="col-md-8 col-sm-12 mt-5 order-md-2">
+                  <div class="card-body">
+                      <h5 tabindex="0" class="card-title">Chef de projet</h5>
+                      <p tabindex="0" class="card-text"> Le Chef de projet (ou Product Owner) a pour mission de
+                          prendre
+                          en compte les
+                          contraintes d’accessibilité lors de la rédaction des spécifications
+                          fonctionnelles et des choix techniques qui en découlent.   
+                      </p>
+
+                  </div>
+              </div>
+
+
+          </div>
+          <!--image metier 2-->
+
+          <div class="row mt-5">
+              <div class="col-md-4 col-sm-12 d-flex justify-content-center mt-5 order-md-2">
+                  <img src="assets/images/preco/dev.jpg" class="rounded float-start"
+                      alt="dessin d'un écran flat design avec souris ecran et les outils qui représentent les paramètres "
+                      width="400" height="296">
+              </div>
+              <div class="col-md-8 col-sm-12 mt-5 order-md-1">
+                  <div class="card-body">
+                      <h5 tabindex="0" class="card-title">Développeurs</h5>
+                      <p tabindex="0" class="card-text">  Un code valide constitue la pierre angulaire de
+                          l’accessibilité. Le développeur est l’acteur le plus important dans le cadre
+                          d’une démarche de mise en accessibilité car c’est lui qui aura la lourde mission
+                          de tout mettre en application. Un code trop complexe est bien souvent source
+                          d’incompatibilité avec les technologies d’assistance. “L’objectif c’est de faire
+                          un site le plus simple possible.
+                      </p>
+
+                  </div>
+              </div>
+          </div>
+
+          <!--image metier 3-->
+
+
+          <div class="row mt-5">
+              <div class="col-md-4 col-sm-12 d-flex justify-content-center mt-5 order-md-1">
+                  <img src="assets/images/preco/uxdesigner.jpg" class="rounded float-end"
+                      alt=" personnage flat design assis au bureau devant un écran d'ou sort une bulle avec outils design"
+                      width="400" height="296">
+              </div>
+
+              <div class="col-md-8 col-sm-12 mt-5 order-md-2">
+                  <div class="card-body">
+                      <h5 tabindex="0" class="card-title">UX Designer</h5>
+                      <p tabindex="0" class="card-text">  
+
+                          L’UX Designer, garant de l’expérience utilisateur (User expérience), a pour
+                          mission de concevoir l’interface pour le plus grand nombre. Il doit donc penser
+                          à tous les utilisateurs, quel que soit leur profil, et identifier leurs usages
+                          et leurs besoins. En créant un (ou plusieurs) persona en situation de handicap,
+                          ce dernier s’assure de ne pas oublier les utilisateurs ayant des besoins
+                          particuliers d’accessibilité. Dans le cadre d’une refonte, il pourra également
+                          aller à la rencontre d’utilisateurs en situation de handicap pour identifier les
+                          points de friction récurrents sur l’interface existante afin de l’optimiser. Il
+                          doit également se tenir au fait des bonnes pratiques d’accessibilité en
+                          conception et concevoir l’interface en fonction de ces dernières. 
+
+                      </p>
+                  </div>
+              </div>
+          </div>
+
+
+          <!--image metier 4-->
+
+
+          <div class="row mt-5">
+              <div class="col-md-4 col-sm-12 d-flex justify-content-center mt-5 order-md-2">
+                  <img src="assets/images/preco/ui designer.jpg"
+                      alt="jeune femme flat design devant un écran choisissant des couleurs" width="400" height="296">
+              </div>
+
+
+              <div class="col-md-8 col-sm-12 mt-5 order-md-1">
+                  <div class="card-body">
+                      <h5 tabindex="0" class="card-title">DA / UI Designer</h5>
+                      <p tabindex="0" class="card-text">
+                           
+                          Le Directeur Artistique ou le Designer d’interface aura à sa charge de
+                          s’assurer que la couche graphique de l’interface permettra au plus grand nombre
+                          de percevoir tous les éléments et d’accéder à l’information. Le choix des
+                          couleurs devra notamment se faire en respectant les contraintes de ratio de
+                          contrastes imposés par le RGAA.
+
+                      </p>
+
+                  </div>
+              </div>
+          </div>
+
+          <!--image metier 5-->
+
+
+
+          <div class="row mt-5">
+              <div class="col-md-4 col-sm-12 d-flex justify-content-center mt-5 order-md-1">
+                  <img src="assets/images/preco/testeurs.jpg" class="rounded float-end"
+                      alt=" deux hommes flat design devant un écran avec des outils pour nettoyer et réparer"
+                      width="400" height="296">
+              </div>
+              <div class="col-md-8 col-sm-12 mt-5 order-md-1">
+                  <div class="card-body">
+                      <h5 tabindex="0" class="card-title"> Testeurs</h5>
+
+                      <p tabindex="0" class="text-start">    
+                          Si les tests sont réalisés en interne par des membres de l’équipe, les
+                          personnes en charge des tests en cours de production devront également tester le
+                          bon fonctionnement de tous les composants en utilisant diverses technologies
+                          d’assistance et en simulant divers mode de navigation. S’il est prévu de faire
+                          tester l’interface par de vrais utilisateurs, les personnes en charge du
+                          recrutement des participants (Chef de projet) devront s’assurer que tous les
+                          types de handicaps sont représentés par les testeurs recrutés. 
+
+                      </p> 
+                  </div>
+              </div>
+          </div>
+          <div class="row mt-0">
+              <div class="col-md-12 col-sm-12 mt-0">
+
+                  <p tabindex="0">Chez nos voisins britanniques “Au Parlement britannique, lors de l’organisation
+                      de tests, le recrutement des participants n’est pas forcément axé sur
+                      l’accessibilité car les équipes savent qu’il y aura un audit dédié à
+                      l’accessibilité en fin de projet. Mais au Gouvernement (Government Digital
+                      Service), à chaque phase de test il faut qu’il y ait des personnes
+                      représentatives des besoins en accessibilité (à minima 25-30% des testeurs). A
+                      chaque sprint, des tests sont organisés regroupant au moins 8 participants dont
+                      au moins 2 ou 3 en situation de handicap. Ces tests sont obligatoires.”
+                  </p>
+              </div>
+          </div>
+
+
+      </section>
+      <!--image metier 6-->
+
+
+      <!--image metier7-->
+
+      <div class="row mt-5">
+          <div class="col-md-4 col-sm-12 d-flex justify-content-center mt-5 order-md-2">
+              <img src="assets/images/preco/audit.jpg" alt="" width="400" height="296">
+          </div>
+          <div class="col-md-8 col-sm-12 mt-5 order-md-1">
+              <div class="card-body">
+                  <h5 tabindex="0" class="card-title">Auditeur </h5>
+
+                  <p tabindex="0" class="card-text">  
+
+                       Un audit de fin de projet devra être prévu afin de vérifier la conformité de
+                      l’interface au RGAA. Évaluer toutes les pages d’un site web est bien souvent trop
+                      chronophage, c’est pourquoi l’auditeur sélectionnera les pages les plus
+                      emblématiques du site et celles apportant le plus de valeur à l’utilisateur. Il
+                      devra ensuite vérifier rigoureusement et pour chacune des pages sélectionnées, tous
+                      les critères du RGAA les uns à la suite des autres en effectuant l’intégralité des
+                      tests proposés dans le référentiel. 
+
+                  </p>
+
+              </div>
+          </div>
+      </div>
+
+
+      <!--image metier 8-->
+
+      <div class="row mt-5">
+          <div class="col-md-4 col-sm-12 d-flex justify-content-center mt-5 order-md-1">
+              <img src="assets/images/preco/contribu.jpg" alt="400" width="" height="296">
+          </div>
+          <div class="col-md-8 col-sm-12 mt-5 order-md-1">
+              <div class="card-body">
+                  <h5 tabindex="0" class="card-title"> Contributeur </h5>
+
+                  <p tabindex="0" class="card-text">  
+                      Comme énoncé précédemment, une démarche de mise en accessibilité ne doit pas
+                      s’arrêter à l’audit qui suit la mise en production du site, mais doit se poursuivre
+                      lors de la phase d’exploitation car l’accessibilité numérique n’est pas un état
+                      définitif et n’est jamais acquise, elle est par nature évolutive. En effet, une
+                      publication web n’est pas figée et évolue dans le temps en fonction des mises à
+                      jours éditoriales et techniques. Le contributeur doit donc veiller à renseigner
+                      correctement les alternatives textuelles des contenus non textuels tels que les
+                      images, les vidéos, les graphiques… Il doit par exemple également s’assurer que les
+                      textes sont compréhensibles dans un français simple, que les tableaux sont
+                      construits correctement et que les fichiers disponibles au téléchargement sont
+                      accessibles (PDF, Word, Powerpoint…). 
+                  </p>
+
+              </div>
+          </div>
+      </div>
+
+
+      <!--image 9-->
+      <div class="row mt-5">
+          <div class="col-md-4 col-sm-12 d-flex justify-content-center mt-5 order-md-2">
+              <img src="assets/images/preco/utilisateur.jpg" class="rounded float-end" alt="" width="400"
+                  height="296">
+          </div>
+
+          <div class="col-md-8 col-sm-12 mt-8 order-md-1">
+              <div class="card-body">
+                  <h5 tabindex="0" class="card-title">Utilisateur </h5>
+
+                  <p tabindex="0" class="card-text">
+                       
+                      Enfin, l’utilisateur final de l’interface a pour responsabilité de régulièrement
+                      mettre à jour son navigateur et ses technologies d’assistance pour bénéficier des
+                      avancées techniques en matière d’accessibilité. Il doit également signaler tout
+                      défaut d’accessibilité qu’il rencontre aux responsables du site ou de l’application
+                      concernée. </p>
+                  <p tabindex="0">
+                      Ce faisant, il contribue à accélérer la prise de conscience des équipes
+                      de production en les alertant et motive les démarches de mise en accessibilité.
+                      Cette liste n’a pas la prétention d’être exhaustive, de nombreux autres
+                      interlocuteurs peuvent intervenir lors d’un projet et avoir une incidence sur son
+                      accessibilité. </p>
+                   <p tabindex="0">
+                      Ainsi, les DSI par exemple, lorsqu’elles sont sollicitées, ne
+                      devraient pas imposer de logiciels ou solutions informatiques connues pour présenter
+                      des défauts d’accessibilité. 
+                  </p>
+                  </p>
+
+              </div>
+          </div>
+      </div>
+          </div>
+
+
+      
     <div>
       <a href='#'><img id="arrow" src="assets/images/FlecheHaut.svg" alt="bouton pour remonter au debut de la page"></a>
   </div>
     <footer>
-      <div class="row">
-        <div class="col-md-12 col-sm-12 mt-5 mentions">
+      <div class="row text-center">
+        <div class="col-md-12 col-sm-12 mt-5">
           <a href="pages/mentions.html">Mentions légales</a>
         </div>
       </div>
@@ -207,9 +880,10 @@
     integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
-  <script src="./assets/script/pageup.js"></script>
-  <script src="./assets/script/charts.js"></script>
-  <script src="./assets/script/main.js"></script>
+  <script src="assets/script/charts.js"></script>
+  <script src="assets/script/van11y-accessible-carrousel-aria.min.js"></script>
+  <script src="assets/script/main.js"></script>
 </body>
 
 </html>
+

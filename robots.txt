@@ -1,11 +1,9 @@
 User-agent: *
-
+Sitemap: https://amandat.promo-51.codeur.online/hackcess/sitemap.xm
 Disallow: /assets/script
 Disallow: /assets/images
-Disallow: /assets/design
 Disallow: mentions.html
 Disallow: LICENSE
 Disallow: README.md
-Disallow: 
 
 Allow:/*css?*
