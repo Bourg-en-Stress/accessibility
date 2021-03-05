@@ -1,3 +1,7 @@
+
+
+
+
 var ctx = document.getElementById('myChart').getContext('2d');
     var myChart = new Chart(ctx, {
         type: 'doughnut',
@@ -7,12 +11,12 @@ var ctx = document.getElementById('myChart').getContext('2d');
                 label: 'Pourcentages handicaps',
                 data: [76, 17, 2, 2, 2, 1],
                 backgroundColor: [
-                    'rgba(243, 156, 18,1.0)',
-                    'rgba(26, 188, 156,1.0)',
-                    'rgba(142, 68, 173,1.0)',
-                    'rgba(192, 57, 43,1.0)',
-                    'rgba(41, 128, 185,1.0)',
-                    'rgba(241, 196, 15,1.0)'
+                    'rgba(20, 20, 20,0.9)',
+                    'rgba(3, 78, 162,1.0)',
+                    'rgba(20, 20, 20, 0.5)',
+                    'rgba(3, 110, 210,1.0)',
+                    'rgba(20, 20, 20, 0.8)',
+                    'rgba(0, 106, 103,1.0)',
                 ]
             }]
         },

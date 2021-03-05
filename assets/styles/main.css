@@ -131,14 +131,15 @@ a:link {
 }
 
 #bouton {
+    background-image: url("../images/dys-icon.png");
+    background-size:cover;
+    background-position: center;
     width:40px;
     height: 40px;
     padding: 6px;
     margin-left:12px;
     background-color: gradient;
-    background-image: url("../images/dys-icon.png");
-    background-size:cover;
-    background-position: center;
+
 }
 
 #bouton1 {
@@ -149,27 +150,21 @@ a:link {
     height: 40px;
     padding: 6px;
     margin-left:12px;
+    cursor:default;
+
 }
 
 #bouton2 {
-    background-image:url("../images/audio-description-icon1.png") ;
+    background-image:url("../images/daltonisme-icone.png") ;
     background-size:cover;
     background-position: center;
     width:40px;
     height: 40px;
     padding: 6px;
     margin-left:12px;
+    cursor:default;
 }
 
-#bouton3 {
-    background-image:url("../images/audio-description-icon2.png") ;
-    background-size:cover;
-    background-position: center;
-    width:40px;
-    height: 40px;
-    padding: 6px;
-    margin-left:12px;
-}
 
 #page-accessibility, #page-handicap, #page-issues, #page-allow-access, #page-good-practices, #page-learning, #page-mention {
     display:none;

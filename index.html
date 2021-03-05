@@ -37,9 +37,9 @@
                   Sensibilisation
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a tabindex="0" class="dropdown-item" id="show-page-accessibility">L'Accessibilité</a></li>
-                  <li><a tabindex="0" class="dropdown-item" id="show-page-handicap">Les Handicaps</a></li>
-                  <li><a tabindex="0" class="dropdown-item" id="show-page-issues">Les Problèmatiques</a></li>
+                  <li><button tabindex="0" class="dropdown-item" id="show-page-accessibility">L'Accessibilité</button></li>
+                  <li><button tabindex="0" class="dropdown-item" id="show-page-handicap">Les Handicaps</button></li>
+                  <li><button tabindex="0" class="dropdown-item" id="show-page-issues">Les Problèmatiques</button></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -48,9 +48,9 @@
                   Préconisations
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a tabindex="0" class="dropdown-item" id="show-page-allow-access">Rendre Accessible</a></li>
-                  <li><a tabindex="0" class="dropdown-item" id="show-page-good-practices">Normes et Bonnes pratiques</a></li>
-                  <li><a tabindex="0" class="dropdown-item" id="show-page-learning">Formation</a></li>
+                  <li><button tabindex="0" class="dropdown-item" id="show-page-allow-access">Rendre Accessible</button></li>
+                  <li><button tabindex="0" class="dropdown-item" id="show-page-good-practices">Normes et Bonnes pratiques</button></li>
+                  <li><button tabindex="0" class="dropdown-item" id="show-page-learning">Formation</button></li>
                 </ul>
               </li>
             </ul>
@@ -60,10 +60,12 @@
       </div>
     </header>
       <div class=" col-md-12 col-sm-12 d-flex">
-        <button id="bouton" class="btn rounded-circle" type="button" aria-describedby="Icone qui applique la police d'écriture « OpenDyslexic »"></button>
-        <div tabindex="0" id="bouton1" class="btn-outline-primary rounded-circle" aria-describedby="Icone qui indique que le site est entièrement accessible en audio-description"></div>
-        <div tabindex="0" id="bouton3" class="btn-outline-primary rounded-circle" aria-describedby="Icone qui indique que le site est entièrement adapté au daltonisme"></div>
+        <button id="bouton" class="btn rounded-circle" type="button" aria-label="Icone qui applique la police d'écriture « OpenDyslexic»"></button>
+        <div tabindex="0" id="bouton1" class="btn-outline rounded-circle" aria-label="Icone qui indique que le site est entièrement accessible en audio-description"></div>
+        <div tabindex="0" id="bouton2" class="btn-outline rounded-circle" aria-label="Icone qui indique que le site est entièrement adapté au daltonisme"></div>
       </div>
+
+
 
 
           <!--HOME -->
@@ -80,48 +82,48 @@
             data-carrousel-span-text-class="invisible" data-carrousel-transition="slide" data-carrousel-existing-hx="h2">
       
             <div class="js-carrousel__content">
-              <h2 tabindex="0">BIENVENUE !</h2>
-              <img tabindex="0" src="assets/images/index/carrousel/plave-handicape.png" alt="une place handicapée" style="width:400px;">
+              <p tabindex="0">BIENVENUE !</p>
+              <img tabindex="0" src="assets/images/index/carrousel/plave-handicape.png" alt="une place handicapée" style="width:200px;">
               <p tabindex="0">Nous savons tous ce que ce pictogramme signifie...</p>
             </div>
 
             <div class="js-carrousel__content">
-              <h2 tabindex="0">C'est celui du handicap !</h2>
+              <p tabindex="0">C'est celui du handicap !</p>
             </div>
 
             <div class="js-carrousel__content">
-              <h2 tabindex="0">Mais en fait le handicap,  c’est plus compliqué :</h2>
-              <img tabindex="0" src="assets/images/index/carrousel/pictogrammes-handicaps.png" alt="des pictogrammes représentant les différentes formes de handicaps." style="width:400px;">
+              <p tabindex="0">Mais en fait le handicap, c’est plus compliqué :</p>
+              <img tabindex="0" src="assets/images/index/carrousel/pictogrammes-handicaps.png" alt="des pictogrammes représentant les différentes formes de handicaps." style="width:200px;">
             </div>
 
             <div class="js-carrousel__content">
-              <h2 tabindex="0">Mais quels handicaps impactent l’accès au numérique ?</h2>
-              <img tabindex="0" src="assets/images/index/carrousel/questions.png" alt="Une image représentant une multitude points d'interrogations dont deux lumineux bleu et orange." style="width:400px;">
+              <p tabindex="0">Quels handicaps impactent l’accès au numérique ?</p>
+              <img tabindex="0" src="assets/images/index/carrousel/questions.png" alt="Une image représentant une multitude points d'interrogations dont deux lumineux bleu et orange." style="width:200px;">
             </div>
 
             <div class="js-carrousel__content">
-              <h2 tabindex="0">Nous en connaissons quelques uns, car ils « se voient. »</h2>
-              <img tabindex="0"src="assets/images/index/carrousel/people-disabilities.png" alt="Deux images représentant une personne sourde et muette et une autre avaugle." style="width:400px;">
+              <p tabindex="0">Nous en connaissons quelques uns, car ils « se voient. »</p>
+              <img tabindex="0"src="assets/images/index/carrousel/people-disabilities.png" alt="Deux images représentant une personne sourde et muette et une autre aveugle." style="width:200px;">
               <p tabindex="0">Troubles du spectre auditif, déficiences visuelles.</p>
             </div>
 
             <div class="js-carrousel__content">
-              <h2 tabindex="0">Mais il en existes beaucoup d’autres…</h2>
-              <p tabindex="0">Déficiences motrices, troubles du psychisme, troubles cognitifs, déficiences auditives, déficiences intelectuelles, polyhandicap</p>
+              <p tabindex="0">Mais il en existes beaucoup d’autres…</p>
+              <p tabindex="0">Déficiences motrices<br> troubles du psychisme<br> troubles cognitifs<br> déficiences auditives<br>déficiences intelectuelles<br>polyhandicap</p>
             </div>
 
             <div class="js-carrousel__content">
-              <h2 tabindex="0">La France en 2020 compte près de 12 millions de personnes en situation de handicap</h2>
-              <img tabindex="0" src="assets/images/index/carrousel/people.png" alt="une place handicapée" style="width:400px;">
+              <p tabindex="0">La France en 2020 compte près de 12 millions de personnes en situation de handicap</p>
+              <img tabindex="0" src="assets/images/index/carrousel/people.png" alt="une place handicapée" style="width:200px;">
             </div>
 
             <div class="js-carrousel__content">
-              <h2 tabindex="0">Alors, que fait-on pour eux ?</h2>
-              <p tabindex="0">On sensibilise le plus possible et on dispense des préconisations aux différents acteurs acteurs !</p>
+              <p tabindex="0">Alors, que fait-on pour eux ?</p>
+              <p tabindex="0">On sensibilise le plus grand nombre.<br>on dispense des préconisations aux différents acteurs!</p>
             </div>
 
             <div class="js-carrousel__content">
-              <h2 tabindex="0">Bonne visite !</h2>
+              <p tabindex="0">Bonne visite !</p>
             </div>
 
           </div>
@@ -163,7 +165,7 @@
         <div class="col-md-12 col-sm-12">
           <h2 tabindex="0">Charte graphique</h2>
           <p>En terme d'accessibilité, les choix les plus difficiles à faire ont étés ceux de la charte graphique.<br>Nous nous sommes demandé quelles étaient les couleurs compatibles avec les 3 formes de daltonisme et nous en avons fait de même en ce qui concerne les polices de caractère pour d'autres formes de handicaps comme la dyslexie et les déficiences visuels.Les polices avec empâtement n’étant pas conseillées pour les personnes ayant déficiences visuelles nous avons choisi de n'utiliser qu'une police .
-            Nous avons donc fais le choix de jouer sur le « gras » de la police pour nos titres<br>Nous avons dû faire un choix fort entre design ou accessibilité pour le plus grand nombre, la thématique de ce site étant l'accessibilité, nous avons donc opté pour cette dernière au détriment du design.<br>
+            Nous avons donc fais le choix de jouer sur le « gras » de la police pour nos titres<br>Nous avons dû faire un choix fort entre esthétique ou accessibilité pour le plus grand nombre, la thématique de ce site étant l'accessibilité, nous avons donc opté pour cette dernière au détriment de l'esthétique.<br>
           </p>
           <div class="row justify-content-center">
           <div class="col-md-6 col-sm-12 mt-5 mb-5">
