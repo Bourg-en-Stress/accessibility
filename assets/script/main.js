@@ -67,19 +67,73 @@ let count = 0 ;
 });
 
 
-
-let truc = 0 ;
   
-  document.getElementById('show-page').addEventListener('click', function () {
+document.getElementById('show-page-home').addEventListener('click', function () {
+  document.getElementById('page-home').style.display = 'block';
+  document.getElementById('page-accessibility').style.display = 'none';  
+  document.getElementById('page-handicap').style.display = 'none';  
+  document.getElementById('page-issues').style.display = 'none';  
+  document.getElementById('page-allow-access').style.display = 'none';  
+  document.getElementById('page-good-practices').style.display = 'none';  
+  document.getElementById('page-learning').style.display = 'none';  
+});
 
+document.getElementById('show-page-accessibility').addEventListener('click', function () {
+  document.getElementById('page-home').style.display = 'none';
+  document.getElementById('page-accessibility').style.display = 'block';  
+  document.getElementById('page-handicap').style.display = 'none';  
+  document.getElementById('page-issues').style.display = 'none';  
+  document.getElementById('page-allow-access').style.display = 'none';  
+  document.getElementById('page-good-practices').style.display = 'none';  
+  document.getElementById('page-learning').style.display = 'none';  
+});
 
-    if (truc == 0) {
-        document.getElementById('page-home').style.display = 'block';
-        truc = 1;
-        
-    } else {
-        document.getElementById('page-home').style.display = 'none';
-        truc = 0;
-    }
-    
+document.getElementById('show-page-handicap').addEventListener('click', function () {
+  document.getElementById('page-home').style.display = 'none';
+  document.getElementById('page-accessibility').style.display = 'none';  
+  document.getElementById('page-handicap').style.display = 'block';  
+  document.getElementById('page-issues').style.display = 'none';  
+  document.getElementById('page-allow-access').style.display = 'none';  
+  document.getElementById('page-good-practices').style.display = 'none';  
+  document.getElementById('page-learning').style.display = 'none';  
+});
+
+document.getElementById('show-page-issues').addEventListener('click', function () {
+  document.getElementById('page-home').style.display = 'none';
+  document.getElementById('page-accessibility').style.display = 'none';  
+  document.getElementById('page-handicap').style.display = 'none';  
+  document.getElementById('page-issues').style.display = 'block';  
+  document.getElementById('page-allow-access').style.display = 'none';  
+  document.getElementById('page-good-practices').style.display = 'none';  
+  document.getElementById('page-learning').style.display = 'none';  
+});
+
+document.getElementById('show-page-allow-access').addEventListener('click', function () {
+  document.getElementById('page-home').style.display = 'none';
+  document.getElementById('page-accessibility').style.display = 'none';  
+  document.getElementById('page-handicap').style.display = 'none';  
+  document.getElementById('page-issues').style.display = 'none';  
+  document.getElementById('page-allow-access').style.display = 'block';  
+  document.getElementById('page-good-practices').style.display = 'none';  
+  document.getElementById('page-learning').style.display = 'none';  
+});
+
+document.getElementById('show-page-good-practices').addEventListener('click', function () {
+  document.getElementById('page-home').style.display = 'none';
+  document.getElementById('page-accessibility').style.display = 'none';  
+  document.getElementById('page-handicap').style.display = 'none';  
+  document.getElementById('page-issues').style.display = 'none';  
+  document.getElementById('page-allow-access').style.display = 'none';  
+  document.getElementById('page-good-practices').style.display = 'block';  
+  document.getElementById('page-learning').style.display = 'none';  
+});
+
+document.getElementById('show-page-learning').addEventListener('click', function () {
+  document.getElementById('page-home').style.display = 'none';
+  document.getElementById('page-accessibility').style.display = 'none';  
+  document.getElementById('page-handicap').style.display = 'none';  
+  document.getElementById('page-issues').style.display = 'none';  
+  document.getElementById('page-allow-access').style.display = 'none';  
+  document.getElementById('page-good-practices').style.display = 'none';  
+  document.getElementById('page-learning').style.display = 'block';  
 });
