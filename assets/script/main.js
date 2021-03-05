@@ -75,7 +75,19 @@ document.getElementById('show-page-home').addEventListener('click', function () 
   document.getElementById('page-issues').style.display = 'none';  
   document.getElementById('page-allow-access').style.display = 'none';  
   document.getElementById('page-good-practices').style.display = 'none';  
-  document.getElementById('page-learning').style.display = 'none';  
+  document.getElementById('page-learning').style.display = 'none';
+  document.getElementById('page-mention').style.display = 'none';   
+});
+
+document.getElementById('show-page-home-2').addEventListener('click', function () {
+  document.getElementById('page-home').style.display = 'block';
+  document.getElementById('page-accessibility').style.display = 'none';  
+  document.getElementById('page-handicap').style.display = 'none';  
+  document.getElementById('page-issues').style.display = 'none';  
+  document.getElementById('page-allow-access').style.display = 'none';  
+  document.getElementById('page-good-practices').style.display = 'none';  
+  document.getElementById('page-learning').style.display = 'none';
+  document.getElementById('page-mention').style.display = 'none';   
 });
 
 document.getElementById('show-page-accessibility').addEventListener('click', function () {
@@ -85,7 +97,8 @@ document.getElementById('show-page-accessibility').addEventListener('click', fun
   document.getElementById('page-issues').style.display = 'none';  
   document.getElementById('page-allow-access').style.display = 'none';  
   document.getElementById('page-good-practices').style.display = 'none';  
-  document.getElementById('page-learning').style.display = 'none';  
+  document.getElementById('page-learning').style.display = 'none';
+  document.getElementById('page-mention').style.display = 'none';  
 });
 
 document.getElementById('show-page-handicap').addEventListener('click', function () {
@@ -95,7 +108,8 @@ document.getElementById('show-page-handicap').addEventListener('click', function
   document.getElementById('page-issues').style.display = 'none';  
   document.getElementById('page-allow-access').style.display = 'none';  
   document.getElementById('page-good-practices').style.display = 'none';  
-  document.getElementById('page-learning').style.display = 'none';  
+  document.getElementById('page-learning').style.display = 'none'; 
+  document.getElementById('page-mention').style.display = 'none'; 
 });
 
 document.getElementById('show-page-issues').addEventListener('click', function () {
@@ -105,7 +119,8 @@ document.getElementById('show-page-issues').addEventListener('click', function (
   document.getElementById('page-issues').style.display = 'block';  
   document.getElementById('page-allow-access').style.display = 'none';  
   document.getElementById('page-good-practices').style.display = 'none';  
-  document.getElementById('page-learning').style.display = 'none';  
+  document.getElementById('page-learning').style.display = 'none'; 
+  document.getElementById('page-mention').style.display = 'none'; 
 });
 
 document.getElementById('show-page-allow-access').addEventListener('click', function () {
@@ -115,7 +130,8 @@ document.getElementById('show-page-allow-access').addEventListener('click', func
   document.getElementById('page-issues').style.display = 'none';  
   document.getElementById('page-allow-access').style.display = 'block';  
   document.getElementById('page-good-practices').style.display = 'none';  
-  document.getElementById('page-learning').style.display = 'none';  
+  document.getElementById('page-learning').style.display = 'none'; 
+  document.getElementById('page-mention').style.display = 'none'; 
 });
 
 document.getElementById('show-page-good-practices').addEventListener('click', function () {
@@ -126,6 +142,7 @@ document.getElementById('show-page-good-practices').addEventListener('click', fu
   document.getElementById('page-allow-access').style.display = 'none';  
   document.getElementById('page-good-practices').style.display = 'block';  
   document.getElementById('page-learning').style.display = 'none';  
+  document.getElementById('page-mention').style.display = 'none';
 });
 
 document.getElementById('show-page-learning').addEventListener('click', function () {
@@ -135,5 +152,19 @@ document.getElementById('show-page-learning').addEventListener('click', function
   document.getElementById('page-issues').style.display = 'none';  
   document.getElementById('page-allow-access').style.display = 'none';  
   document.getElementById('page-good-practices').style.display = 'none';  
-  document.getElementById('page-learning').style.display = 'block';  
+  document.getElementById('page-learning').style.display = 'block'; 
+  document.getElementById('page-mention').style.display = 'none'; 
+});
+
+document.getElementById('show-page-mention').addEventListener('click', function () {
+  document.getElementById('page-home').style.display = 'none';
+  document.getElementById('page-accessibility').style.display = 'none';  
+  document.getElementById('page-handicap').style.display = 'none';  
+  document.getElementById('page-issues').style.display = 'none';  
+  document.getElementById('page-allow-access').style.display = 'none';  
+  document.getElementById('page-good-practices').style.display = 'none';  
+  document.getElementById('page-learning').style.display = 'none'; 
+  document.getElementById('page-mention').style.display = 'block'; 
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 });
