@@ -1,21 +1,4 @@
-html {
-    font-size: 62.5%;
-    /* IE9-IE11 math fixing. See https://connect.microsoft.com/IE/feedback/details/816709/ */
-    /* Thanks to @guardian, @victorbritopro, @eQRoeil & Knacss */
-    font-size: calc(1em * 0.625);
-    box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-  body {
-    background: #fff;
-    color: #444;
-    font-family: 'roboto', Arial, sans-serif;
-    font-size: 1.8em; /* equiv 18px */
-    line-height: 1.5; /* to update if needed */
-  }
-  
+
   
   @font-face {
       /*font-family: 'robotoregular';*/
@@ -62,30 +45,6 @@ html {
   }
   .aligncenter {
     text-align: center;
-  }
-  h1,
-  .h1 {
-    display: block;
-    font-size: 1.55556em; /* equiv 28px */
-    line-height: 1.92857;
-    margin: 0 0 .96429em 0;
-    font-weight: normal;
-  }
-  h2,
-  .h2 {
-    display: block;
-    font-size: 1.33333em; /* equiv 24px */
-    line-height: 1.125;
-    margin: 0 0 1.125em 0;
-    font-weight: normal;
-  }
-  h3,
-  .h3 {
-    display: block;
-    font-size: 1.11111em; /* equiv 20px */
-    line-height: 1.35;
-    margin: 0 0 1.35em 0;
-    font-weight: normal;
   }
   
   .link {
