@@ -1,0 +1,12 @@
+.error
+{
+    color: #006a67;
+    font-size:4em;
+    margin-top: 100px;
+}
+
+.text-error
+{
+    color: #006a67;
+    font-size:2em;
+}

@@ -1,136 +1,10 @@
 
-h1{
-    color: #006a67;
-}
 
-h2{ 
-    color: #034ea2;
-
-}
-
-h3{
-    color: #036ed2;
-}
-
-/*déssoulignement*/
-
-a:link{
-    text-decoration: none;
-    }
-
-    a:hover{
-        color: #141414;
-    }
-
-/*emplacement header*/
-
-.namelogo{
-display: flex;
-justify-content: space-around;
-align-items: center;
-}
-
-
-.navbar{
-    justify-content: flex-end;
-}
-
-
-.nav-link  {
-    color: #006a67;
-}
-
-.dropdown-item{
-    color: #006a67;
-}
-
-
-/*liste déroulante*/
-
-.menupointe {
-    width: 200px;
-    background-color: #006a67; 
-    margin-left: 5px;
-    
-}
-
-.bloc {
-    cursor: pointer;
-    height:30px ;
-    background-color: #006a67;
-    text-align: center;
-    color: white;
-    padding: 4px;
-}
-
-.pointe {
-    position: absolute;
-    margin-left: 25px;
-    width: 0;
-    height: 0;
-    border-left: 18px solid transparent;
-    border-right: 18px solid transparent;
-    border-top: 12px solid #006a67;
-}
-
-.bloci {
-    
-    padding: 10px 3px 3px 3px;
-    margin-top: 1px;
-    height:40px ;
-    background-color: white;
-    text-align: center;
-}
-
-.pointei {
-    position: absolute;
-    margin-left: 25px;
-    width: 0;
-    height: 0;
-    border-left: 18px solid transparent;
-    border-right: 18px solid transparent;
-    border-top: 12px solid white;
-}
-
-.pointes {
-    position: absolute;
-    margin-left: 24px;
-    width: 0;
-    height: 0;
-    border-left: 19px solid transparent;
-    border-right: 19px solid transparent;
-    border-top: 13px solid #006a67;
-}
-
-.rouvert {
-position: absolute;
-display: none;
-background-color: #006a67;
-border: 1px solid #006a67;
-width: 200px;
-}
-
-.logo {
-    width: 75px;
-    height: 75px;
-}
+/*page sensibilisation*/
 
 .sensimg {
     width: 300px;
     height: 200px;
-}
-
-html {
-    scroll-behavior: smooth;
-  }
-
-#arrow {
-    display: none;
-    height: 60px;
-    width: 60px;
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
 }
 
 #sensinfo {
@@ -141,3 +15,25 @@ html {
 .hlist {
     list-style: none;
 }
+
+.sensicon {
+    width: 80px;
+    height: 80px;
+    align-self: center;
+}
+
+.infographie {
+    color: white;
+}
+
+@media(max-width:990px) {
+    .sensicon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .listepuce {
+        padding: 15px;
+    }
+}
+

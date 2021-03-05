@@ -36,11 +36,15 @@ h3 {
 }
 /*déssoulignement*/
 
+a {
+    color: #006a67;
+}
+
 a:link {
     text-decoration: none;
     color: #006a67;
-
     }
+
     a:hover{
         color: #141414;
     }
@@ -116,15 +120,6 @@ a:link {
     transform: rotate(720deg) scale(1);
   }
 }
-
-.mentions {
-    display: flex;
-    justify-content: center;
-}
-
-.mentions a {
-    color: #006a67;
-}
  
 #arrow {
     display: none;
@@ -133,4 +128,49 @@ a:link {
     position: fixed;
     right: 20px;
     bottom: 20px;
+}
+
+#bouton {
+    width:40px;
+    height: 40px;
+    padding: 6px;
+    margin-left:12px;
+    background-color: gradient;
+    background-image: url(../images/dys-icon.png);
+    background-size:cover;
+    background-position: center;
+}
+
+#bouton1 {
+    background-image:url("../images/audio-description-icon.png") ;
+    background-size:cover;
+    background-position: center;
+    width:40px;
+    height: 40px;
+    padding: 6px;
+    margin-left:12px;
+}
+
+#bouton2 {
+    background-image:url("../images/audio-description-icon1.png") ;
+    background-size:cover;
+    background-position: center;
+    width:40px;
+    height: 40px;
+    padding: 6px;
+    margin-left:12px;
+}
+
+#bouton3 {
+    background-image:url("../images/audio-description-icon2.png") ;
+    background-size:cover;
+    background-position: center;
+    width:40px;
+    height: 40px;
+    padding: 6px;
+    margin-left:12px;
+}
+
+#page-home {
+    display:none;
 }
