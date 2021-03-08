@@ -3,6 +3,8 @@
 > Ce cahier des charges est à destination de l'équipe de conception et de développement d'un service web. Tout ce qui n'est pas spécifié dans ce cahier des charges doit faire l'objet de propositions durant les phases de conception ou de développement, et doit être validé par le commanditaire pour pouvoir être intégré au produit fini. 
 
 
+![Charte graphique du projet](https://amandat.promo-51.codeur.online/hackcess/assets/images/index/grafic-charter.png)
+
 ## Objectifs pédagogiques
 - Gérer un projet *digital* en équipe avec une méthodologie de gestion de projet ;
 - Produire des maquettes *desktop* & *mobile* et des prototypes d'interfaces Web ;
@@ -308,4 +310,10 @@ Le dossier de conception doit contenir :
 - [Article Wikipédia : Accessibilité du web](https://fr.wikipedia.org/wiki/Accessibilit%C3%A9_du_web)
 
 - [Des outils UI pour l'accessibilité sur uigoodies.com](https://www.uigoodies.com/?category=Accessibility)
+
+- [Association Nationale pour la Prise en Compte du Handicap dans les Politiques Publiques et Privées](https://aphpp.org/)
+
+- [FACIL’iti](https://ws.facil-iti.com/)
+
+- [alfasado](https://alfasado.net/)
 
