@@ -3,7 +3,7 @@
 > Ce cahier des charges est à destination de l'équipe de conception et de développement d'un service web. Tout ce qui n'est pas spécifié dans ce cahier des charges doit faire l'objet de propositions durant les phases de conception ou de développement, et doit être validé par le commanditaire pour pouvoir être intégré au produit fini. 
 
 
-<center> ![Charte graphique du projet](https://amandat.promo-51.codeur.online/hackcess/assets/images/index/grafic-charter.png) </center>
+![Charte graphique du projet](https://amandat.promo-51.codeur.online/hackcess/assets/images/index/grafic-charter.png)
 
 ## Objectifs pédagogiques
 - Gérer un projet *digital* en équipe avec une méthodologie de gestion de projet ;
